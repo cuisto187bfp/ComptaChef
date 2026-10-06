@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO ===== -->
+<title>Expert-comptable restaurant Bordeaux & toute la France | ComptaChef — Pilotage & rentabilité CHR</title>
+<meta name="description" content="ComptaChef, expert-comptable spécialisé restauration à Bordeaux : nous aidons les restaurateurs réalisant plus de 600 k€ de CA à récupérer des points de marge grâce à un pilotage connecté à leurs outils. Partout en France. Diagnostic garanti.">
+<link rel="canonical" href="https://www.comptachef.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="ComptaChef — Expert-comptable restaurant, Bordeaux & toute la France">
+<meta property="og:description" content="Nous aidons les restaurateurs qui réalisent plus de 600 k€ de CA par an à récupérer des points de marge grâce à un pilotage connecté à leurs outils.">
+<meta property="og:url" content="https://www.comptachef.com/">
+<meta name="robots" content="index,follow">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "ComptaChef — Expert-comptable restauration",
+  "description": "Cabinet d'expertise comptable spécialisé restauration (CHR) : comptabilité, pilotage de marge et direction financière externalisée pour restaurants indépendants, groupes multi-sites et franchisés.",
+  "url": "https://www.comptachef.com/",
+  "telephone": "+33699846862",
+  "address": {"@type":"PostalAddress","streetAddress":"Centre commercial des Grands Hommes, 1er étage","postalCode":"33000","addressLocality":"Bordeaux","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},
+  "areaServed": ["Bordeaux","Nouvelle-Aquitaine","France"],
+  "priceRange": "€€€",
+  "knowsAbout": ["expert-comptable restaurant","pilotage restauration","food cost","prime cost","franchise restauration","comptabilité CHR"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Combien coûte un expert-comptable pour un restaurant ?","acceptedAnswer":{"@type":"Answer","text":"Nos formules démarrent à 450 € HT/mois pour la conformité et à 900 € HT/mois pour le pilotage complet avec tableau de bord mensuel. Le juste point de comparaison n'est pas le prix, mais ce que coûte l'absence de pilotage : 2 points de marge perdus sur 1 M€ de CA représentent 20 000 € par an."},
+    {"@type":"Question","name":"J'ai déjà un expert-comptable, pourquoi changer ?","acceptedAnswer":{"@type":"Answer","text":"Un cabinet généraliste produit vos comptes ; un cabinet spécialisé restauration les fait parler. Prime cost, coût matière, coulage, benchmarks entre établissements comparables : c'est la lecture sectorielle qui transforme la comptabilité en décisions. Le changement de cabinet est simple et nous le prenons entièrement en charge."},
+    {"@type":"Question","name":"Travaillez-vous en dehors de Bordeaux ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Le cabinet est basé à Bordeaux et accompagne des exploitants partout en France : le pilotage mensuel se fait à distance, données de caisse connectées à l'appui, avec des revues sur site pour les groupes multi-établissements."},
+    {"@type":"Question","name":"Mon enseigne de franchise me fournit déjà des ratios","acceptedAnswer":{"@type":"Answer","text":"Votre franchiseur vit de vos redevances, assises sur votre chiffre d'affaires — pas sur votre rentabilité. Nous lisons les mêmes chiffres, mais dans votre camp : rentabilité réelle après redevances, pertinence d'un remodeling, solidité du prévisionnel de votre prochaine unité."}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* palette ComptaChef */
+  --navy:#2D3282;
+  --navy-fonce:#1E2260;
+  --rouge:#C4302B;
+  --rouge-neon:#FF4B44;
+  --vert:#4FCB6B;
+  /* mode sombre (hero) */
+  --nuit:#070B22;
+  --nuit-2:#0B1033;
+  --verre:rgba(122,134,255,.07);
+  --verre-bord:rgba(122,134,255,.2);
+  --bleu-neon:#5B6CFF;
+  --texte-nuit:#E9EBFF;
+  --gris-nuit:#9AA1D6;
+  /* mode clair */
+  --fond-clair:#FFFFFF;
+  --fond-doux:#F6F7FC;
+  --gris:#5F66A0;
+  --bord-clair:rgba(45,50,130,.18);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.dash,.barres i,.pill .dot{animation:none!important}}
+body{font-family:'Outfit',sans-serif;background:var(--fond-clair);color:var(--navy);line-height:1.65;font-size:17px;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--rouge);color:#fff}
+
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.02em}
+h1{font-size:clamp(2.3rem,5vw,3.8rem)}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
+em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;letter-spacing:0;
+  background:linear-gradient(100deg,var(--rouge),var(--rouge-neon));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sombre em{background:linear-gradient(100deg,var(--rouge-neon),#FF8A85);-webkit-background-clip:text;background-clip:text}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--navy);font-weight:600;margin-bottom:1.2rem}
+.eyebrow::before{content:"";width:26px;height:2px;background:linear-gradient(90deg,var(--rouge),var(--navy))}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+section.douce{background:var(--fond-doux)}
+.intro{color:var(--gris);max-width:46em;margin:14px 0 44px;font-size:1.05rem}
+.laser{height:2px;width:100%;border:none;background:linear-gradient(90deg,transparent,var(--rouge) 20%,var(--navy) 80%,transparent);opacity:.55}
+
+/* ---------- boutons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 32px;border-radius:999px;font-weight:600;font-size:.95rem;cursor:pointer;border:none;font-family:'Space Grotesk',sans-serif;letter-spacing:.02em;transition:transform .18s,box-shadow .18s;position:relative}
+.btn:hover{transform:translateY(-2px)}
+.btn-rouge{background:linear-gradient(120deg,var(--rouge),var(--rouge-neon));color:#fff;box-shadow:0 8px 26px rgba(196,48,43,.35)}
+.btn-rouge:hover{box-shadow:0 12px 36px rgba(196,48,43,.5)}
+.btn-navy{background:var(--navy);color:#fff;box-shadow:0 8px 26px rgba(45,50,130,.3)}
+.btn-navy:hover{box-shadow:0 12px 36px rgba(45,50,130,.45)}
+.btn-ligne-nuit{background:transparent;color:var(--texte-nuit);border:1px solid var(--verre-bord);backdrop-filter:blur(6px)}
+.btn-ligne-nuit:hover{border-color:var(--bleu-neon);box-shadow:0 0 24px rgba(91,108,255,.3)}
+.btn-ligne{background:#fff;color:var(--navy);border:1.5px solid var(--navy)}
+.btn-ligne:hover{box-shadow:0 8px 24px rgba(45,50,130,.2)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--rouge);outline-offset:3px}
+.sub-cta{display:block;font-size:.82rem;color:var(--gris-nuit);margin-top:10px;text-align:center}
+
+/* ================= NAV ================= */
+nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .3s,box-shadow .3s}
+.nav-inner{max-width:1280px;margin:0 auto;padding:22px 24px;display:flex;align-items:center;gap:26px;transition:padding .3s}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.3rem;flex:none}
+.logo b{color:var(--texte-nuit);transition:color .3s}
+.logo span{color:var(--rouge-neon);transition:color .3s}
+.logo i{font-style:normal;color:var(--bleu-neon);margin-right:2px}
+.logo small{display:block;font-size:.6rem;letter-spacing:.3em;color:var(--gris-nuit);font-weight:500;margin-top:-2px;text-transform:uppercase}
+.nav-links{display:flex;gap:26px;font-size:.92rem;font-weight:500;color:var(--gris-nuit);margin-left:8px}
+.nav-links a:hover{filter:brightness(1.5)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:12px}
+.btn-nav{padding:11px 20px;font-size:.88rem}
+nav.retreci{background:rgba(255,255,255,.92);backdrop-filter:blur(14px);box-shadow:0 6px 30px rgba(30,34,96,.12)}
+nav.retreci .nav-inner{padding:10px 24px}
+nav.retreci .logo b{color:var(--navy)}
+nav.retreci .logo span{color:var(--rouge)}
+nav.retreci .logo small{color:var(--gris)}
+nav.retreci .nav-links{color:var(--gris)}
+@media(max-width:1000px){.nav-links{display:none}}
+
+/* ================= HERO SOMBRE ================= */
+.hero-sombre{position:relative;background:var(--nuit);color:var(--texte-nuit);overflow:hidden;padding:168px 0 110px}
+.hero-sombre::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(600px 400px at 85% -5%, rgba(91,108,255,.18), transparent 60%),
+    radial-gradient(500px 380px at 5% 70%, rgba(255,75,68,.08), transparent 60%),
+    repeating-linear-gradient(to right, transparent 0 79px, rgba(122,134,255,.04) 79px 80px),
+    repeating-linear-gradient(to bottom, transparent 0 79px, rgba(122,134,255,.04) 79px 80px)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;position:relative;z-index:2}
+.hero-sombre .accroche{font-size:1.18rem;color:var(--gris-nuit);margin:26px 0 10px;max-width:33rem}
+.hero-sombre .accroche strong{color:var(--texte-nuit)}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px;align-items:flex-start}
+.hero-meta{display:flex;align-items:center;gap:22px;margin-top:34px;flex-wrap:wrap;color:var(--gris-nuit);font-size:.9rem}
+.hero-meta span{display:inline-flex;align-items:center;gap:8px}
+.hero-meta .vcheck{color:var(--vert)}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--verre-bord);background:var(--verre);border-radius:999px;padding:8px 16px;font-size:.82rem;backdrop-filter:blur(6px)}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--vert);box-shadow:0 0 10px var(--vert);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* fond animé : mini dashboards resto qui traversent le hero */
+.fond-dash{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.dash{position:absolute;left:-420px;width:290px;background:linear-gradient(160deg,rgba(91,108,255,.1),rgba(255,75,68,.05)),rgba(11,16,51,.85);border:1px solid rgba(122,134,255,.22);border-radius:16px;padding:18px 18px 16px;opacity:.32;will-change:transform;font-variant-numeric:tabular-nums;animation:tram var(--duree,70s) linear infinite;animation-delay:var(--depart,0s)}
+@keyframes tram{from{transform:translateX(0) translateY(0)}to{transform:translateX(calc(100vw + 860px)) translateY(var(--derive,0px))}}
+.d1{top:8%;--duree:74s;--depart:-8s;--derive:26px}
+.d2{top:44%;--duree:54s;--depart:-30s;--derive:-20px;width:264px;opacity:.24;filter:blur(.6px)}
+.d3{top:72%;--duree:88s;--depart:-52s;--derive:18px;width:246px;opacity:.2;filter:blur(1px)}
+.dash h5{font-family:'Space Grotesk',sans-serif;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bleu-neon);margin-bottom:12px;display:flex;justify-content:space-between}
+.dash h5 .pt{color:#7DE79B}
+.dash .ligne{display:flex;justify-content:space-between;font-size:.75rem;color:var(--gris-nuit);padding:5px 0;border-bottom:1px dashed rgba(122,134,255,.15)}
+.dash .ligne:last-child{border-bottom:none}
+.dash .ligne b{color:var(--texte-nuit);font-family:'Space Grotesk',sans-serif}
+.barres{display:flex;align-items:flex-end;gap:8px;height:56px;margin-top:10px}
+.barres i{flex:1;border-radius:4px 4px 0 0;background:linear-gradient(180deg,var(--bleu-neon),rgba(91,108,255,.25));animation:pousse 2.6s ease-in-out infinite alternate;transform-origin:bottom}
+.barres i:nth-child(1){height:40%}
+.barres i:nth-child(2){height:62%;animation-delay:.3s}
+.barres i:nth-child(3){height:48%;animation-delay:.6s}
+.barres i:nth-child(4){height:80%;animation-delay:.9s;background:linear-gradient(180deg,var(--rouge-neon),rgba(255,75,68,.25))}
+.barres i:nth-child(5){height:58%;animation-delay:1.2s}
+@keyframes pousse{from{transform:scaleY(.55)}to{transform:scaleY(1)}}
+
+/* le tableau de bord produit (carte verre) */
+.board{background:linear-gradient(160deg,rgba(91,108,255,.12),rgba(255,75,68,.06)),var(--nuit-2);border:1px solid var(--verre-bord);border-radius:var(--radius);padding:26px 26px 20px;box-shadow:0 30px 70px -30px rgba(0,0,0,.7);backdrop-filter:blur(8px)}
+.board-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(122,134,255,.2);padding-bottom:12px;margin-bottom:6px}
+.board-head .t{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.92rem}
+.board-head .d{font-size:.76rem;color:var(--gris-nuit)}
+.board table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.board td{padding:11px 0;border-bottom:1px dashed rgba(122,134,255,.15);font-size:.9rem}
+.board td.k{color:var(--gris-nuit)}
+.board td.v{text-align:right;font-weight:700;font-family:'Space Grotesk',sans-serif;font-size:1.02rem}
+.board td.s{text-align:right;font-size:.78rem;width:98px}
+.ok{color:#7DE79B}.warn{color:#FFC861}.bad{color:var(--rouge-neon)}
+.board-foot{margin-top:14px;font-size:.82rem;color:var(--gris-nuit)}
+.board-foot strong{color:var(--texte-nuit)}
+
+/* ================= QUALIFICATION ================= */
+.quali-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.quali-col{background:#fff;border:1px solid var(--bord-clair);border-radius:var(--radius);padding:32px;box-shadow:0 14px 40px rgba(30,34,96,.06)}
+.quali-col h3{font-size:1.1rem;margin-bottom:16px}
+.quali-col.oui h3{color:var(--navy)}
+.quali-col.non h3{color:var(--rouge)}
+.quali-col ul{list-style:none}
+.quali-col li{font-size:.95rem;padding:9px 0 9px 28px;position:relative;color:var(--gris)}
+.oui li::before{content:"✓";position:absolute;left:0;color:var(--vert);font-weight:700}
+.non li::before{content:"✕";position:absolute;left:0;color:var(--rouge-neon);font-weight:700}
+.quali-note{margin-top:22px;font-size:.92rem;color:var(--gris);max-width:54em}
+
+/* ================= CONSTAT (sombre) ================= */
+.constat{background:var(--nuit-2);color:var(--texte-nuit);padding:90px 0;position:relative;overflow:hidden}
+.constat::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(500px 360px at 90% 10%, rgba(91,108,255,.15), transparent 60%)}
+.constat .wrap{position:relative;z-index:2}
+.constat-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:40px;align-items:start}
+.constat h2{font-size:1.55rem}
+.fait{border-left:2px solid var(--verre-bord);padding-left:18px}
+.fait .n{font-family:'Space Grotesk',sans-serif;font-size:1.9rem;font-weight:700;font-variant-numeric:tabular-nums}
+.fait .l{font-size:.9rem;color:var(--gris-nuit);margin-top:6px}
+.constat-math{margin-top:48px;background:var(--verre);border:1px solid var(--verre-bord);border-radius:var(--radius);padding:28px 32px;display:grid;grid-template-columns:1fr auto 1fr auto 1.1fr;gap:18px;align-items:center;text-align:center;backdrop-filter:blur(6px)}
+.cm-item .a{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums}
+.cm-item .b{font-size:.82rem;color:var(--gris-nuit)}
+.cm-op{font-size:1.4rem;color:var(--rouge-neon);font-weight:700}
+.cm-item.res .a{font-size:1.9rem;background:linear-gradient(100deg,var(--rouge-neon),#FF8A85);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ================= MÉTHODE ================= */
+.methode-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
+.met{background:#fff;border:1px solid var(--bord-clair);border-radius:var(--radius);padding:34px 30px;box-shadow:0 14px 40px rgba(30,34,96,.06);transition:transform .2s,box-shadow .2s}
+.met:hover{transform:translateY(-4px);box-shadow:0 22px 56px rgba(30,34,96,.12)}
+.met .chiffre{font-family:'Space Grotesk',sans-serif;font-size:2.6rem;font-weight:700;line-height:1;background:linear-gradient(120deg,var(--rouge),var(--navy));-webkit-background-clip:text;background-clip:text;color:transparent}
+.met h3{font-size:1.05rem;margin:10px 0 10px}
+.met p{font-size:.94rem;color:var(--gris)}
+
+/* ================= OFFRE ================= */
+.diag-hero{background:var(--nuit);color:var(--texte-nuit);border-radius:calc(var(--radius) + 6px);padding:50px 54px;margin-bottom:60px;position:relative;overflow:hidden}
+.diag-hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(520px 380px at 90% 0%, rgba(91,108,255,.2), transparent 60%),radial-gradient(420px 320px at 0% 100%, rgba(255,75,68,.1), transparent 60%)}
+.diag-hero > *{position:relative;z-index:2}
+.diag-hero .eyebrow{color:var(--gris-nuit)}
+.diag-hero .eyebrow::before{background:linear-gradient(90deg,var(--rouge-neon),var(--bleu-neon))}
+.diag-hero h2{max-width:22em;margin-bottom:12px}
+.diag-hero .sous{color:var(--gris-nuit);max-width:42em;margin-bottom:30px}
+.stack{list-style:none;max-width:48em}
+.stack li{display:grid;grid-template-columns:1fr auto;gap:16px;padding:12px 0;border-bottom:1px dashed rgba(122,134,255,.18);font-size:.95rem;align-items:baseline}
+.stack .val{font-variant-numeric:tabular-nums;color:var(--gris-nuit);font-size:.86rem;white-space:nowrap;font-family:'Space Grotesk',sans-serif}
+.stack li:last-child{border-bottom:none}
+.diag-total{display:flex;gap:36px;align-items:center;margin-top:28px;flex-wrap:wrap}
+.diag-total .barre{font-size:1rem;color:var(--gris-nuit);text-decoration:line-through}
+.diag-total .prix{font-family:'Space Grotesk',sans-serif;font-size:2.5rem;font-weight:700;font-variant-numeric:tabular-nums;background:linear-gradient(100deg,var(--rouge-neon),#FF8A85);-webkit-background-clip:text;background-clip:text;color:transparent}
+.diag-total .cond{font-size:.85rem;color:var(--gris-nuit);max-width:21em}
+.garantie{margin-top:28px;border:1px solid rgba(79,203,107,.45);background:rgba(79,203,107,.08);border-radius:var(--radius);padding:18px 22px;display:flex;gap:16px;align-items:flex-start;max-width:48em}
+.garantie .ic{font-size:1.3rem}
+.garantie p{font-size:.92rem}
+.garantie strong{color:var(--vert)}
+.diag-cta{margin-top:32px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.rarete{font-size:.85rem;color:var(--gris-nuit);max-width:24em}
+.rarete strong{color:var(--texte-nuit)}
+
+.paliers{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;align-items:stretch}
+.palier{background:#fff;border:1px solid var(--bord-clair);border-radius:var(--radius);padding:34px 30px;display:flex;flex-direction:column;box-shadow:0 14px 40px rgba(30,34,96,.06)}
+.palier.star{border:2px solid var(--rouge);position:relative;box-shadow:0 22px 60px rgba(196,48,43,.14)}
+.palier.star::before{content:"Le plus choisi";position:absolute;top:-14px;left:26px;background:linear-gradient(120deg,var(--rouge),var(--rouge-neon));color:#fff;font-size:.75rem;font-weight:600;padding:4px 14px;border-radius:999px;font-family:'Space Grotesk',sans-serif}
+.palier h3{font-size:1.25rem}
+.palier .pour{font-size:.89rem;color:var(--gris);margin:6px 0 18px;min-height:2.7em}
+.palier .prix{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums}
+.palier .prix small{font-size:.85rem;font-weight:500;color:var(--gris)}
+.palier .prix-note{font-size:.82rem;color:var(--gris);margin-bottom:8px}
+.palier .ancre{font-size:.83rem;color:var(--rouge);font-weight:600;margin-bottom:18px}
+.palier ul{list-style:none;margin:0 0 26px;flex:1}
+.palier li{font-size:.92rem;padding:9px 0 9px 26px;position:relative;border-bottom:1px solid var(--fond-doux);color:var(--gris)}
+.palier li::before{content:"—";position:absolute;left:0;color:var(--navy);font-weight:700}
+.palier li.plus{color:var(--navy)}
+.palier li.plus::before{content:"+";color:var(--vert)}
+.offre-note{margin-top:28px;font-size:.9rem;color:var(--gris);max-width:56em}
+
+/* ================= PREUVE SOCIALE ================= */
+.temoins{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:10px}
+.temoin{background:#fff;border:1px solid var(--bord-clair);border-left:3px solid var(--rouge);border-radius:var(--radius);padding:30px 32px;box-shadow:0 14px 40px rgba(30,34,96,.06)}
+.temoin .res{font-family:'Space Grotesk',sans-serif;font-size:1.35rem;font-weight:700;font-variant-numeric:tabular-nums;background:linear-gradient(120deg,var(--rouge),var(--navy));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:8px}
+.temoin p{font-size:.94rem;color:var(--gris)}
+.temoin .qui{margin-top:14px;font-size:.85rem;font-weight:600;color:var(--navy)}
+
+/* ================= LEAD MAGNET ================= */
+.aimant{background:linear-gradient(120deg,var(--navy),var(--navy-fonce));color:#fff;border-radius:calc(var(--radius) + 6px);padding:48px 52px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center;position:relative;overflow:hidden}
+.aimant::before{content:"";position:absolute;inset:0;background:radial-gradient(400px 300px at 95% 10%, rgba(91,108,255,.3), transparent 60%);pointer-events:none}
+.aimant > *{position:relative;z-index:2}
+.aimant h2{margin-bottom:10px}
+.aimant p{color:rgba(233,235,255,.8);font-size:.97rem;max-width:36em}
+.aimant form{display:flex;gap:12px;flex-wrap:wrap}
+.aimant input{flex:1;min-width:220px;padding:15px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.25);font:inherit;font-size:.95rem;background:rgba(255,255,255,.1);color:#fff}
+.aimant input::placeholder{color:rgba(255,255,255,.5)}
+.aimant input:focus{outline:2px solid var(--rouge-neon)}
+.aimant .rgpd{font-size:.78rem;color:rgba(233,235,255,.55);margin-top:12px}
+
+/* ================= FAQ ================= */
+.faq details{background:#fff;border:1px solid var(--bord-clair);border-radius:var(--radius);padding:4px 26px;margin-bottom:12px;box-shadow:0 10px 30px rgba(30,34,96,.05)}
+.faq summary{cursor:pointer;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem;padding:18px 36px 18px 0;list-style:none;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:12px;font-size:1.5rem;color:var(--rouge);font-weight:400}
+.faq details[open] summary::after{content:"–"}
+.faq .rep{padding:0 0 20px;color:var(--gris);font-size:.95rem;max-width:54em}
+
+/* ================= CTA FINAL ================= */
+.final{background:var(--nuit);color:var(--texte-nuit);position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(560px 420px at 15% 0%, rgba(91,108,255,.18), transparent 60%),radial-gradient(460px 360px at 95% 100%, rgba(255,75,68,.1), transparent 60%)}
+.final .wrap{position:relative;z-index:2}
+.final-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.final .eyebrow{color:var(--gris-nuit)}
+.final .eyebrow::before{background:linear-gradient(90deg,var(--rouge-neon),var(--bleu-neon))}
+.final .intro{color:var(--gris-nuit)}
+.etapes{list-style:none;counter-reset:e;margin-top:8px}
+.etapes li{counter-increment:e;padding:13px 0 13px 48px;position:relative;font-size:.95rem;color:var(--gris-nuit)}
+.etapes li::before{content:counter(e);position:absolute;left:0;top:10px;width:30px;height:30px;border-radius:50%;background:linear-gradient(120deg,var(--rouge),var(--rouge-neon));color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.final-coord{margin-top:26px;font-size:.9rem;color:var(--gris-nuit);line-height:2}
+.final-coord a{color:var(--texte-nuit);font-weight:600}
+.final form{background:var(--verre);border:1px solid var(--verre-bord);border-radius:var(--radius);padding:32px;backdrop-filter:blur(8px)}
+.champ{margin-bottom:15px}
+.champ label{display:block;font-size:.86rem;font-weight:600;margin-bottom:6px;font-family:'Space Grotesk',sans-serif}
+.champ input,.champ select,.champ textarea{width:100%;padding:13px 16px;border:1px solid var(--verre-bord);border-radius:12px;font:inherit;font-size:.94rem;background:rgba(7,11,34,.5);color:#fff}
+.champ ::placeholder{color:rgba(233,235,255,.35)}
+.champ input:focus,.champ select:focus,.champ textarea:focus{outline:2px solid var(--rouge-neon);border-color:transparent}
+.champ select option{color:var(--navy);background:#fff}
+
+/* ================= FOOTER ================= */
+footer{background:var(--navy-fonce);color:rgba(233,235,255,.65);padding:52px 0 36px;font-size:.88rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+footer h4{font-family:'Space Grotesk',sans-serif;color:#fff;font-size:.95rem;margin-bottom:12px}
+footer a:hover{color:#fff}
+footer ul{list-style:none}
+footer li{padding:4px 0}
+.foot-logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.25rem}
+.foot-logo b{color:#fff}
+.foot-logo span{color:var(--rouge-neon)}
+.foot-logo i{font-style:normal;color:var(--bleu-neon);margin-right:2px}
+.foot-contact{margin-top:8px}
+.foot-legal{margin-top:36px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.82rem}
+
+.sticky-cta{display:none}
+@media (max-width:940px){
+  .hero-grid,.quali-grid,.constat-grid,.paliers,.methode-grid,.temoins,.final-grid{grid-template-columns:1fr}
+  .aimant{grid-template-columns:1fr;padding:34px 28px}
+  .constat-math{grid-template-columns:1fr;gap:8px}
+  .cm-op{display:none}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  section{padding:60px 0}
+  .hero-sombre{padding:130px 0 70px}
+  .diag-hero{padding:34px 28px}
+  .sticky-cta{display:block;position:fixed;bottom:0;left:0;right:0;z-index:70;background:linear-gradient(120deg,var(--rouge),var(--rouge-neon));text-align:center;padding:15px;font-family:'Space Grotesk',sans-serif;font-weight:700;color:#fff;text-decoration:none;box-shadow:0 -8px 24px rgba(0,0,0,.25)}
+  body{padding-bottom:54px}
+}
+</style>
+</head>
+<body id="top">
+
+<nav id="navbar" aria-label="Navigation principale">
+  <div class="nav-inner">
+    <a class="logo" href="#top"><i>◈</i><b>COMPTA</b><span>CHEF</span><small>Restauration</small></a>
+    <div class="nav-links">
+      <a href="#methode">La méthode</a>
+      <a href="#offre">Diagnostic & formules</a>
+      <a href="#faq">Questions</a>
+    </div>
+    <div class="nav-right">
+      <a class="btn btn-rouge btn-nav" href="#contact">Réserver mon diagnostic</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO SOMBRE ============ -->
+<header class="hero-sombre">
+  <div class="fond-dash" aria-hidden="true">
+    <div class="dash d1">
+      <h5>Coût matière <span class="pt">● live</span></h5>
+      <div class="ligne"><span>Réel</span><b>31,8 %</b></div>
+      <div class="ligne"><span>Cible</span><b>29,5 %</b></div>
+      <div class="barres"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="dash d2">
+      <h5>Prime cost</h5>
+      <div class="ligne"><span>Matière + personnel</span><b>61,4 %</b></div>
+      <div class="ligne"><span>Objectif</span><b>&lt; 60 %</b></div>
+      <div class="ligne"><span>Écart annualisé</span><b>− 15 400 €</b></div>
+    </div>
+    <div class="dash d3">
+      <h5>CA par couvert</h5>
+      <div class="ligne"><span>Ce mois</span><b>27,40 €</b></div>
+      <div class="ligne"><span>vs N-1</span><b class="pt">+ 1,10 €</b></div>
+    </div>
+  </div>
+
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill"><span class="dot"></span>Cabinet inscrit à l'Ordre · Bordeaux · toute la France</span>
+      <h1 style="margin-top:26px">Récupérez 2 à 3 points de marge <em>sans travailler une heure de plus</em></h1>
+      <p class="accroche">Nous aidons les restaurateurs qui réalisent <strong>plus de 600 k€ de CA par an</strong> à récupérer des points de marge grâce à un pilotage spécifique, connecté à leurs outils. <strong>2 points de marge sur 1 M€ de CA, c'est 20 000 € par an</strong> — voilà ce que nous venons chercher dans vos chiffres.</p>
+      <div class="hero-actions">
+        <div>
+          <a class="btn btn-rouge" href="#offre">Chiffrer ce que je laisse dormir</a>
+          <span class="sub-cta">Diagnostic de rentabilité · 1 200 € · garanti</span>
+        </div>
+        <a class="btn btn-ligne-nuit" href="#methode">Voir comment ça marche</a>
+      </div>
+      <div class="hero-meta">
+        <span><span class="vcheck">✓</span> 100 % restauration, rien d'autre</span>
+        <span><span class="vcheck">✓</span> 45 min de votre temps par mois</span>
+        <span><span class="vcheck">✓</span> Données de caisse automatisées</span>
+      </div>
+    </div>
+
+    <aside class="board" aria-label="Exemple de tableau de bord mensuel">
+      <div class="board-head">
+        <span class="t">Votre tableau de bord — 1 page, 5 chiffres</span>
+        <span class="d">Exemple · Brasserie, 1,1 M€</span>
+      </div>
+      <table>
+        <tr><td class="k">Prime cost (matière + personnel)</td><td class="v">61,4 %</td><td class="s warn">cible &lt; 60 %</td></tr>
+        <tr><td class="k">Coût matière réel</td><td class="v">31,8 %</td><td class="s bad">+2,3 pts = 25 300 €/an</td></tr>
+        <tr><td class="k">Masse salariale / CA</td><td class="v">29,6 %</td><td class="s ok">dans la cible</td></tr>
+        <tr><td class="k">CA par couvert</td><td class="v">27,40 €</td><td class="s ok">+1,10 €</td></tr>
+        <tr><td class="k">Trésorerie disponible</td><td class="v">38 j</td><td class="s warn">à surveiller</td></tr>
+      </table>
+      <p class="board-foot">Ce mois-ci&nbsp;: <strong>3 décisions</strong> — renégocier le poste viandes, repricer 2 plats, revoir le planning du mardi soir.</p>
+    </aside>
+  </div>
+</header>
+
+<!-- ============ QUALIFICATION ============ -->
+<section class="douce">
+  <div class="wrap">
+    <div class="quali-grid">
+      <div class="quali-col oui">
+        <h3>ComptaChef est fait pour vous si…</h3>
+        <ul>
+          <li>Vous exploitez un ou plusieurs restaurants, ou une franchise, avec 600 k€ de CA ou plus</li>
+          <li>Vous sentez que la marge s'érode mais vous ne savez pas précisément où</li>
+          <li>Vous êtes prêt à consacrer 45 minutes par mois à vos chiffres — pas une de plus</li>
+          <li>Votre établissement est (ou peut être) équipé d'une caisse connectée</li>
+        </ul>
+      </div>
+      <div class="quali-col non">
+        <h3>Il n'est pas fait pour vous si…</h3>
+        <ul>
+          <li>Vous cherchez la comptabilité la moins chère du marché</li>
+          <li>Vous voulez un bilan une fois par an et aucun contact entre-temps</li>
+          <li>Vous n'êtes pas prêt à appliquer 3 décisions par mois</li>
+          <li>Vos données de caisse ne sont pas exploitables et vous ne souhaitez pas que ça change</li>
+        </ul>
+      </div>
+    </div>
+    <p class="quali-note">Nous préférons vous le dire avant le premier rendez-vous : nous acceptons un nombre limité de nouveaux dossiers par trimestre, et uniquement ceux où nous savons pouvoir produire un résultat mesurable.</p>
+  </div>
+</section>
+
+<!-- ============ CONSTAT + CALCUL ============ -->
+<div class="constat" id="probleme">
+  <div class="wrap">
+    <div class="constat-grid">
+      <h2>Le marché de la restauration grandit. Les restaurants ferment. La différence entre les deux&nbsp;: <em>le pilotage.</em></h2>
+      <div class="fait">
+        <div class="n">+15 à 20 %</div>
+        <div class="l">de hausse des matières premières depuis 2024 — pour un coût matière qui pèse déjà 34 % du CA moyen du secteur.</div>
+      </div>
+      <div class="fait">
+        <div class="n">2 mois</div>
+        <div class="l">c'est le retard avec lequel un exploitant sans pilotage découvre une dérive de marge. Nous le ramenons à 30 jours.</div>
+      </div>
+    </div>
+    <div class="constat-math" role="img" aria-label="2 points de marge multipliés par 1 million d'euros de chiffre d'affaires égalent 20 000 euros par an">
+      <div class="cm-item"><div class="a">2 pts</div><div class="b">de marge récupérés</div></div>
+      <div class="cm-op">×</div>
+      <div class="cm-item"><div class="a">1 M€</div><div class="b">de chiffre d'affaires</div></div>
+      <div class="cm-op">=</div>
+      <div class="cm-item res"><div class="a">20 000 €</div><div class="b">par an, chaque année</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MÉTHODE 5·3·45 ============ -->
+<section id="methode">
+  <div class="wrap">
+    <span class="eyebrow">La méthode 5 · 3 · 45</span>
+    <h2>Cinq chiffres. Trois décisions. <em>Quarante-cinq minutes par mois.</em></h2>
+    <p class="intro">Conçue pour quelqu'un qui travaille 70 heures par semaine : vos données remontent automatiquement — caisse connectée, factures fournisseurs — vous ne saisissez rien, vous ne cherchez rien. Vous décidez.</p>
+    <div class="methode-grid">
+      <div class="met">
+        <div class="chiffre">5</div>
+        <h3>chiffres vitaux, sur une page</h3>
+        <p>Prime cost, coût matière, masse salariale, CA par couvert, trésorerie. Pas quinze onglets Excel : les cinq chiffres qui décident de la survie d'un établissement, comparés chaque mois à votre cible et aux établissements comparables de notre portefeuille.</p>
+      </div>
+      <div class="met">
+        <div class="chiffre">3</div>
+        <h3>décisions concrètes et datées</h3>
+        <p>Chaque rendez-vous se termine par trois actions précises : un fournisseur à renégocier, une fiche technique à revoir, un planning à ajuster. Et le mois suivant, on vérifie ce que chacune a rapporté.</p>
+      </div>
+      <div class="met">
+        <div class="chiffre">45</div>
+        <h3>minutes de votre temps, pas plus</h3>
+        <p>Un rendez-vous mensuel, préparé par nous, qui va droit aux décisions. C'est le seul temps que la méthode vous demande — le reste est automatisé ou pris en charge par le cabinet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="laser">
+
+<!-- ============ OFFRE ============ -->
+<section class="douce" id="offre">
+  <div class="wrap">
+
+    <div class="diag-hero">
+      <span class="eyebrow">Par où commencer</span>
+      <h2>Le Diagnostic de rentabilité : nous chiffrons <em>les euros qui dorment</em> dans votre exploitation.</h2>
+      <p class="sous">Trois ans de comptes, vos données de caisse, et une restitution en rendez-vous qui met des montants précis sur ce que vous perdez — et ce qui est récupérable.</p>
+      <ul class="stack">
+        <li>Analyse de 3 exercices comptables et de vos données de caisse <span class="val">valeur 900 €</span></li>
+        <li>Chiffrage poste par poste : coût matière, coulage, masse salariale, plats sous-margés <span class="val">valeur 700 €</span></li>
+        <li>Comparaison à des établissements comparables (benchmarks CHR) <span class="val">valeur 400 €</span></li>
+        <li>Plan d'action priorisé : les 5 premiers gisements, avec les montants en face <span class="val">valeur 500 €</span></li>
+        <li>Restitution en rendez-vous d'1 h 30, à votre établissement ou en visio <span class="val">incluse</span></li>
+      </ul>
+      <div class="diag-total">
+        <span class="barre">Valeur totale : 2 500 €</span>
+        <span class="prix">1 200 €</span>
+        <span class="cond">intégralement déduits de votre premier trimestre si vous poursuivez en Pilotage ou Direction financière</span>
+      </div>
+      <div class="garantie">
+        <span class="ic">🛡</span>
+        <p><strong>Notre garantie :</strong> si le diagnostic ne met pas en évidence au moins 10 000 € de gains annuels potentiels dans votre exploitation, il est intégralement remboursé. Vous gardez le rapport.</p>
+      </div>
+      <div class="diag-cta">
+        <a class="btn btn-rouge" href="#contact">Réserver mon diagnostic</a>
+        <span class="rarete"><strong>4 diagnostics par mois</strong> — c'est notre capacité réelle de production, pas un compteur marketing.</span>
+      </div>
+    </div>
+
+    <span class="eyebrow">Et ensuite</span>
+    <h2>Trois niveaux d'accompagnement. <em>Vous montez quand vous êtes prêt.</em></h2>
+    <p class="intro">Chaque formule inclut la précédente. Les honoraires définitifs sont fixés en lettre de mission, après diagnostic.</p>
+
+    <div class="paliers">
+      <div class="palier">
+        <h3>Conformité</h3>
+        <p class="pour">Pour l'établissement qui veut être en règle, sans y penser.</p>
+        <p class="prix">à partir de 450&nbsp;€ <small>/ mois HT</small></p>
+        <p class="prix-note">selon la taille de l'établissement</p>
+        <p class="ancre">≈ le coût d'un couvert par service</p>
+        <ul>
+          <li>Tenue et révision comptable</li>
+          <li>Déclarations fiscales et TVA</li>
+          <li>Bulletins de paie et social CHR</li>
+          <li>Bilan annuel et liasse fiscale</li>
+        </ul>
+        <a class="btn btn-ligne" href="#contact">Être rappelé</a>
+      </div>
+
+      <div class="palier star">
+        <h3>Pilotage</h3>
+        <p class="pour">Pour l'exploitant qui veut décider avec ses chiffres, pas les subir.</p>
+        <p class="prix">à partir de 900&nbsp;€ <small>/ mois HT</small></p>
+        <p class="prix-note">par établissement, dégressif au-delà du premier</p>
+        <p class="ancre">Rentabilisé dès 0,9 point de marge récupéré sur 1,2 M€ de CA</p>
+        <ul>
+          <li>Tout Conformité, inclus</li>
+          <li class="plus">Tableau de bord mensuel — 1 page, 5 chiffres</li>
+          <li class="plus">Rendez-vous mensuel 45 min → 3 décisions datées</li>
+          <li class="plus">Suivi coût matière, coulage et fiches techniques</li>
+          <li class="plus">Alerte immédiate en cas de dérive, pas 2 mois après</li>
+        </ul>
+        <a class="btn btn-rouge" href="#contact">Commencer par le diagnostic</a>
+      </div>
+
+      <div class="palier">
+        <h3>Direction financière</h3>
+        <p class="pour">Pour les groupes et franchisés de 2 établissements et plus.</p>
+        <p class="prix">Sur diagnostic</p>
+        <p class="prix-note">tarif selon le nombre d'établissements</p>
+        <p class="ancre">Une direction financière sectorielle, pour une fraction des 80 k€ d'un DAF salarié</p>
+        <ul>
+          <li>Tout Pilotage, inclus</li>
+          <li class="plus">Consolidation et comparatifs entre vos sites</li>
+          <li class="plus">Benchmarks anonymisés de notre portefeuille CHR</li>
+          <li class="plus">Revue trimestrielle : ouvertures, investissements, financement</li>
+          <li class="plus">Votre interlocuteur face à la banque et au franchiseur</li>
+        </ul>
+        <a class="btn btn-ligne" href="#contact">Parler de votre groupe</a>
+      </div>
+    </div>
+    <p class="offre-note">Prérequis : caisse connectée (Lightspeed, Zelty, L'Addition, SumUp…) — nous prenons en charge la mise en place si nécessaire. Le changement d'expert-comptable est simple : une lettre, et nous nous occupons de tout, y compris de récupérer vos dossiers auprès du cabinet sortant.</p>
+  </div>
+</section>
+
+<!-- ============ PREUVE SOCIALE — SECTION MASQUÉE ============
+À RÉACTIVER quand vous aurez vos 2 premiers cas réels : supprimez cette ligne et la ligne "FIN SECTION MASQUÉE" ci-dessous,
+puis remplacez les [crochets] par vos chiffres. Ne publiez JAMAIS de faux témoignages.
+<!~~ ============ PREUVE SOCIALE ============ ~~>
+<section id="resultats">
+  <div class="wrap">
+    <span class="eyebrow">Résultats</span>
+    <h2>Ce que le pilotage change, <em>en chiffres.</em></h2>
+    <p class="intro">Chaque mission se mesure en points de marge et en euros — voici des cas réels de notre portefeuille, anonymisés. <em style="background:none;color:var(--gris);font-size:.9em">[Zone à remplir avec vos 2 premiers cas d'étude — ne jamais publier de faux témoignages.]</em></p>
+    <div class="temoins">
+      <div class="temoin">
+        <div class="res">− X,X points de coût matière en X mois</div>
+        <p>[Récit du cas en 3 lignes : situation de départ, les 2-3 décisions clés prises en rendez-vous mensuel, le résultat en euros annualisés.]</p>
+        <p class="qui">[Type d'établissement, CA, ville] — client depuis [année]</p>
+      </div>
+      <div class="temoin">
+        <div class="res">+ XX XXX € de trésorerie en X mois</div>
+        <p>[Récit du cas en 3 lignes : situation de départ, les décisions clés, le résultat mesuré.]</p>
+        <p class="qui">[Type d'établissement, CA, ville] — client depuis [année]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+FIN SECTION MASQUÉE -->
+<!-- ============ LEAD MAGNET ============ -->
+<section class="douce" id="guide" style="padding-top:0">
+  <div class="wrap">
+    <div class="aimant">
+      <div>
+        <h2>Pas encore prêt ? <em style="background:linear-gradient(100deg,#FF8A85,var(--rouge-neon));-webkit-background-clip:text;background-clip:text">Commencez par le guide.</em></h2>
+        <p>« Les 5 ratios qui décident de la survie de votre restaurant » — 12 pages, vos cibles par type d'établissement, et la méthode pour les calculer ce soir avec votre caisse. Le même référentiel que nous utilisons en mission.</p>
+      </div>
+      <div>
+        <!-- FORMSPREE guide : même principe, remplacez VOTRE_ID_GUIDE (vous pouvez créer un 2e formulaire pour distinguer les demandes) -->
+        <form action="https://formspree.io/f/VOTRE_ID_GUIDE" method="POST">
+          <input type="email" name="email" placeholder="Votre email professionnel" aria-label="Votre email professionnel" autocomplete="email" required>
+          <button class="btn btn-rouge" type="submit">Recevoir le guide</button>
+        </form>
+        <p class="rgpd">Un email par mois maximum : un ratio décrypté, un cas concret. Désinscription en un clic. Vos données restent chez nous — secret professionnel oblige.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <span class="eyebrow">Vos questions</span>
+    <h2>Ce que les exploitants nous demandent <em>avant de signer.</em></h2>
+    <div style="margin-top:38px">
+      <details>
+        <summary>« J'ai déjà un expert-comptable. »</summary>
+        <p class="rep">Un cabinet généraliste produit vos comptes ; un cabinet spécialisé restauration les fait parler. La différence n'est pas la liasse fiscale — elle est identique partout — c'est la lecture : prime cost, coulage, benchmarks d'établissements comparables, et trois décisions par mois. Le changement est simple et sans friction : une lettre, et nous gérons tout le transfert avec le cabinet sortant, comme le prévoit la profession.</p>
+      </details>
+      <details>
+        <summary>« Combien ça coûte, vraiment ? »</summary>
+        <p class="rep">De 450 € HT/mois pour la conformité seule à 900 € et plus pour le pilotage complet, fixés précisément en lettre de mission après diagnostic. Mais le vrai calcul est inverse : combien coûte l'absence de pilotage ? Sur un établissement à 1 M€ avec 2 points de coût matière en dérive, la réponse est 20 000 € par an. C'est ce montant-là que le diagnostic commence par chiffrer chez vous.</p>
+      </details>
+      <details>
+        <summary>« Je n'ai pas le temps pour du reporting. »</summary>
+        <p class="rep">Nous non plus, nous n'en voulons pas. Vos données remontent automatiquement depuis votre caisse et vos factures fournisseurs — vous ne saisissez rien. Votre implication totale : 45 minutes par mois, en rendez-vous préparé par nous, qui se termine par trois décisions. Si un accompagnement exige plus de votre temps que ça, c'est qu'il est mal conçu.</p>
+      </details>
+      <details>
+        <summary>« Mon enseigne me fournit déjà des ratios. »</summary>
+        <p class="rep">Oui — et votre franchiseur vit de vos redevances, assises sur votre chiffre d'affaires, pas sur votre rentabilité. Nous lisons les mêmes chiffres, mais dans votre camp : rentabilité réelle après redevances, opportunité réelle d'un remodeling, solidité du prévisionnel avant votre prochaine unité. C'est précisément parce que vous êtes en franchise qu'un regard indépendant a le plus de valeur.</p>
+      </details>
+      <details>
+        <summary>« Et si ça ne marche pas chez moi ? »</summary>
+        <p class="rep">C'est le rôle du diagnostic : avant tout engagement récurrent, il chiffre noir sur blanc ce qui est récupérable dans votre exploitation. S'il ne met pas en évidence au moins 10 000 € de gains annuels potentiels, il est remboursé et vous gardez le rapport. Et nos lettres de mission de pilotage sont sans engagement de durée au-delà du préavis d'usage : nous préférons vous garder par les résultats que par le contrat.</p>
+      </details>
+      <details>
+        <summary>« Vous êtes loin de chez moi. »</summary>
+        <p class="rep">Le cabinet est basé à Bordeaux, au cœur des Grands Hommes, et accompagne des exploitants partout en France. Le pilotage mensuel se fait très bien à distance — c'est même le format préféré de nos clients multi-établissements — avec une revue trimestrielle sur site pour les groupes.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL + CONTACT ============ -->
+<section class="final" id="contact">
+  <div class="wrap final-grid">
+    <div>
+      <span class="eyebrow">Prochaine étape</span>
+      <h2>Dans 6 mois, vos chiffres auront changé. <em>Ou pas.</em></h2>
+      <p class="intro">La seule différence entre les deux scénarios se joue maintenant, en trois étapes :</p>
+      <ol class="etapes">
+        <li>Vous remplissez le formulaire — 2 minutes. Nous vous rappelons sous 48 h ouvrées pour un échange de 20 minutes, sans engagement.</li>
+        <li>Si votre établissement correspond, nous réalisons le Diagnostic de rentabilité (1 200 €, garanti) : vous repartez avec les montants, quoi qu'il arrive.</li>
+        <li>Vous décidez. Avec nous en Pilotage — le diagnostic est alors déduit — ou seul, avec le plan d'action en main.</li>
+      </ol>
+      <p class="final-coord">
+        📍 Centre commercial des Grands Hommes, 1er étage, 33000 Bordeaux<br>
+        📞 <a href="tel:+33699846862">06 99 84 68 62</a><br>
+        🗺 <a href="https://www.google.com/maps/search/Centre+commercial+des+Grands+Hommes+Bordeaux" rel="noopener">Voir sur Google Maps ↗</a><br>
+        Cabinet inscrit à l'Ordre des experts-comptables · interventions à Bordeaux, en Nouvelle-Aquitaine et partout en France
+      </p>
+    </div>
+    <!-- FORMSPREE : créez un formulaire sur formspree.io et remplacez VOTRE_ID ci-dessous par votre identifiant (ex: xqkrpyzb) -->
+    <form action="https://formspree.io/f/VOTRE_ID" method="POST">
+      <div class="champ">
+        <label for="nom">Votre nom</label>
+        <input id="nom" name="nom" type="text" autocomplete="name" required>
+      </div>
+      <div class="champ">
+        <label for="etab">Votre établissement (ou groupe)</label>
+        <input id="etab" name="etablissement" type="text" placeholder="Nom, ville">
+      </div>
+      <div class="champ">
+        <label for="profil">Votre situation</label>
+        <select id="profil" name="situation">
+          <option>Un établissement en activité</option>
+          <option>Plusieurs établissements</option>
+          <option>Franchisé ou futur franchisé</option>
+          <option>Projet de création ou de reprise</option>
+        </select>
+      </div>
+      <div class="champ">
+        <label for="ca">Chiffre d'affaires annuel (approximatif)</label>
+        <select id="ca" name="chiffre_affaires">
+          <option>Moins de 600 k€</option>
+          <option>600 k€ – 1,2 M€</option>
+          <option>1,2 M€ – 3 M€</option>
+          <option>Plus de 3 M€</option>
+        </select>
+      </div>
+      <div class="champ">
+        <label for="msg">Votre priorité du moment, en deux lignes</label>
+        <textarea id="msg" name="message" rows="3" placeholder="Ex. : ma marge baisse depuis 6 mois et je ne sais pas d'où ça vient"></textarea>
+      </div>
+      <button class="btn btn-rouge" type="submit" style="width:100%">Demander à être rappelé sous 48 h</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><i>◈</i><b>COMPTA</b><span>CHEF</span></div>
+        <p style="margin-top:12px">Cabinet d'expertise comptable inscrit à l'Ordre, dédié exclusivement au secteur café-hôtellerie-restauration : comptabilité, pilotage de marge et direction financière externalisée pour restaurants indépendants, groupes multi-sites et franchisés — à Bordeaux, en Nouvelle-Aquitaine et partout en France.</p>
+      </div>
+      <div>
+        <h4>Nos accompagnements</h4>
+        <ul>
+          <li><a href="#offre">Expert-comptable restaurant</a></li>
+          <li><a href="#offre">Pilotage & tableau de bord CHR</a></li>
+          <li><a href="#offre">Direction financière multi-sites</a></li>
+          <li><a href="#offre">Accompagnement franchisés</a></li>
+          <li><a href="#offre">Création & reprise de restaurant</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Le cabinet</h4>
+        <ul>
+          <li><a href="#methode">La méthode 5 · 3 · 45</a></li>
+          <li><a href="#guide">Guide des 5 ratios</a></li>
+          <li><a href="#faq">Questions fréquentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="foot-contact">
+          <li>📍 Centre commercial des Grands Hommes, 1er étage, 33000 Bordeaux</li>
+          <li>📞 <a href="tel:+33699846862">06 99 84 68 62</a></li>
+          <li>🗺 <a href="https://www.google.com/maps/search/Centre+commercial+des+Grands+Hommes+Bordeaux" rel="noopener">Voir sur Google Maps ↗</a></li>
+          <li style="margin-top:8px"><a href="#">LinkedIn</a> · <a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 ComptaChef. Tous droits réservés — Honoraires fixés en lettre de mission</span>
+      <span><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="sticky-cta" href="#contact">Réserver mon diagnostic — 1 200 €, garanti</a>
+
+<script>
+const nav=document.getElementById('navbar');
+addEventListener('scroll',()=>{nav.classList.toggle('retreci',scrollY>40)},{passive:true});
+</script>
+
+</body>
+</html>

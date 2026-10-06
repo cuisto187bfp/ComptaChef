@@ -1,0 +1,3 @@
+# Netlify — redirections
+# Toute ancienne URL du site précédent (ex: /services, /tarifs) renvoie vers l'accueil en 301 (permanent, transmet le SEO)
+/*    /    301
