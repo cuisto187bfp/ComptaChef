@@ -7,7 +7,7 @@
 
 <!-- ===== SEO ===== -->
 <title>Expert-comptable restaurant Bordeaux & toute la France | ComptaChef — Pilotage & rentabilité CHR</title>
-<meta name="description" content="ComptaChef, expert-comptable spécialisé restauration à Bordeaux : nous aidons les restaurateurs réalisant plus de 600 k€ de CA à récupérer des points de marge grâce à un pilotage connecté à leurs outils. Partout en France. Diagnostic garanti.">
+<meta name="description" content="ComptaChef, expert-comptable spécialisé restauration à Bordeaux : nous aidons les restaurateurs réalisant plus de 600 k€ de CA à récupérer des points de marge grâce à un pilotage connecté à leurs outils. Partout en France. Diagnostic offert si vous poursuivez.">
 <link rel="canonical" href="https://www.comptachef.com/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
@@ -25,7 +25,7 @@
   "url": "https://www.comptachef.com/",
   "telephone": "+33699846862",
   "address": {"@type":"PostalAddress","streetAddress":"Centre commercial des Grands Hommes, 1er étage","postalCode":"33000","addressLocality":"Bordeaux","addressRegion":"Nouvelle-Aquitaine","addressCountry":"FR"},
-  "areaServed": ["Bordeaux","Nouvelle-Aquitaine","France"],
+  "areaServed": ["Bordeaux","Mérignac","Pessac","Talence","Bègles","Villenave-d'Ornon","Gradignan","Le Bouscat","Bruges","Cenon","Lormont","Eysines","Blanquefort","Saint-Médard-en-Jalles","Bassin d'Arcachon","Libourne","Gironde","Nouvelle-Aquitaine","France"],
   "priceRange": "€€€",
   "knowsAbout": ["expert-comptable restaurant","pilotage restauration","food cost","prime cost","franchise restauration","comptabilité CHR"]
 }
@@ -35,7 +35,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"Combien coûte un expert-comptable pour un restaurant ?","acceptedAnswer":{"@type":"Answer","text":"Nos formules démarrent à 450 € HT/mois pour la conformité et à 900 € HT/mois pour le pilotage complet avec tableau de bord mensuel. Le juste point de comparaison n'est pas le prix, mais ce que coûte l'absence de pilotage : 2 points de marge perdus sur 1 M€ de CA représentent 20 000 € par an."},
+    {"@type":"Question","name":"Combien coûte un expert-comptable pour un restaurant ?","acceptedAnswer":{"@type":"Answer","text":"Un devis clair et détaillé vous est adressé avant toute mission, puis formalisé en lettre de mission. Le prix dépend du volume de l'établissement, des missions choisies et du degré de collaboration souhaité."},
     {"@type":"Question","name":"J'ai déjà un expert-comptable, pourquoi changer ?","acceptedAnswer":{"@type":"Answer","text":"Un cabinet généraliste produit vos comptes ; un cabinet spécialisé restauration les fait parler. Prime cost, coût matière, coulage, benchmarks entre établissements comparables : c'est la lecture sectorielle qui transforme la comptabilité en décisions. Le changement de cabinet est simple et nous le prenons entièrement en charge."},
     {"@type":"Question","name":"Travaillez-vous en dehors de Bordeaux ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Le cabinet est basé à Bordeaux et accompagne des exploitants partout en France : le pilotage mensuel se fait à distance, données de caisse connectées à l'appui, avec des revues sur site pour les groupes multi-établissements."},
     {"@type":"Question","name":"Mon enseigne de franchise me fournit déjà des ratios","acceptedAnswer":{"@type":"Answer","text":"Votre franchiseur vit de vos redevances, assises sur votre chiffre d'affaires — pas sur votre rentabilité. Nous lisons les mêmes chiffres, mais dans votre camp : rentabilité réelle après redevances, pertinence d'un remodeling, solidité du prévisionnel de votre prochaine unité."}
@@ -152,7 +152,7 @@ nav.retreci .nav-inner{padding:10px 24px}
 .hero-meta{display:flex;align-items:center;gap:22px;margin-top:34px;flex-wrap:wrap;color:var(--gris);font-size:.9rem}
 .hero-meta span{display:inline-flex;align-items:center;gap:8px}
 .hero-meta .vcheck{color:var(--vert)}
-.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(45,50,130,.25);background:#fff;color:var(--navy);border-radius:999px;padding:8px 16px;font-size:.82rem;box-shadow:0 4px 14px rgba(30,34,96,.08)}
+.pill{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(45,50,130,.25);background:#fff;color:var(--navy);border-radius:999px;padding:12px 22px;font-size:1rem;font-weight:600;box-shadow:0 4px 14px rgba(30,34,96,.08)}
 .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--vert);box-shadow:0 0 10px var(--vert);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 
@@ -277,6 +277,16 @@ nav.retreci .nav-inner{padding:10px 24px}
   .cdr-head{display:none}
   .cdr-row{grid-template-columns:1fr;gap:10px;padding:18px 20px}
 }
+
+
+.graphiques{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}
+.graph{background:#fff;border:1px solid var(--bord-clair);border-radius:var(--radius);padding:24px 24px 18px;box-shadow:0 14px 40px rgba(30,34,96,.06);color:var(--navy)}
+.graph figcaption{font-size:.95rem;margin-bottom:10px;color:var(--gris)}
+.graph figcaption strong{color:var(--navy);font-family:'Space Grotesk',sans-serif}
+.graph svg{width:100%;height:auto;display:block}
+.graph p{font-size:.88rem;color:var(--gris);margin-top:10px}
+@media (max-width:940px){.graphiques{grid-template-columns:1fr}}
+@media (prefers-color-scheme: dark){.graph{background:#0E1440}}
 
 /* ================= OFFRE ================= */
 .diag-hero{background:var(--nuit);color:var(--texte-nuit);border-radius:calc(var(--radius) + 6px);padding:50px 54px;margin-bottom:60px;position:relative;overflow:hidden}
@@ -456,8 +466,9 @@ footer li{padding:4px 0}
     <a class="logo" href="#top"><i>◈</i><b>COMPTA</b><span>CHEF</span><small>Restauration</small></a>
     <div class="nav-links">
       <a href="#parcours">Le parcours</a>
-      <a href="#methode">La méthode</a>
-      <a href="#offre">Diagnostic & formules</a>
+      <a href="#compte-de-resultat">Approche</a>
+      <a href="#diagnostic">Diagnostic</a>
+      <a href="#formules">Formules</a>
       <a href="#faq">Questions</a>
       <a href="/club.html">Le Club</a>
       <a href="/articles.html">Articles</a>
@@ -468,7 +479,7 @@ footer li{padding:4px 0}
         <a href="https://www.instagram.com/comptachef/" aria-label="Instagram" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm7.85-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></a>
         <a href="https://wa.me/33699846862" aria-label="WhatsApp" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg></a>
       </div>
-      <a class="btn btn-rouge btn-nav" href="#contact">Réserver mon diagnostic</a>
+      <a class="btn btn-rouge btn-nav" href="#formulaire">Réserver mon diagnostic</a>
     </div>
   </div>
 </nav>
@@ -502,8 +513,8 @@ footer li{padding:4px 0}
       <p class="accroche">Nous aidons les restaurateurs qui réalisent <strong>plus de 600 k€ de CA par an</strong> à récupérer des points de marge grâce à un pilotage spécifique, connecté à leurs outils. <strong>2 points de marge sur 1 M€ de CA, c'est 20 000 € par an</strong> — voilà ce que nous venons chercher dans vos chiffres.</p>
       <div class="hero-actions">
         <div>
-          <a class="btn btn-rouge" href="#offre">Chiffrer ce que je laisse dormir</a>
-          <span class="sub-cta">Diagnostic de rentabilité · 1 200 € · garanti</span>
+          <a class="btn btn-rouge" href="#formulaire">Chiffrer ce que je laisse dormir</a>
+          <span class="sub-cta">Diagnostic de rentabilité · 980 € HT · offert si vous continuez avec nous</span>
         </div>
         <a class="btn btn-ligne" href="#methode">Voir comment ça marche</a>
       </div>
@@ -579,7 +590,6 @@ footer li{padding:4px 0}
         </ul>
       </div>
     </div>
-    <p class="quali-note">Nous préférons vous le dire avant le premier rendez-vous : nous acceptons un nombre limité de nouveaux dossiers par trimestre, et uniquement ceux où nous savons pouvoir produire un résultat mesurable.</p>
   </div>
 </section>
 
@@ -700,6 +710,64 @@ footer li{padding:4px 0}
       </div>
     </div>
     <p class="cdr-note">C'est le déroulé concret du rendez-vous mensuel&nbsp;: chaque mois, nous zoomons sur la ligne qui a le plus bougé — et les 3 décisions du mois sortent de là. Benchmarks sectoriels fournis poste par poste&nbsp;: on vous dit où vous payez au-dessus du marché. Et parce qu'un graphique vaut mille lignes, chaque analyse est restituée visuellement&nbsp;: matrice BCG de votre carte, dispersion des prix (Omnès), CA par créneau — vos chiffres en images, lisibles en 5 minutes.</p>
+
+    <!-- Exemples de lecture graphique -->
+    <div class="graphiques">
+      <figure class="graph">
+        <figcaption><strong>La matrice de votre carte</strong> — popularité × marge, plat par plat</figcaption>
+        <svg viewBox="0 0 460 340" role="img" aria-label="Matrice BCG d'une carte de restaurant : popularité en abscisse, marge en ordonnée, chaque point est un plat">
+          <line x1="50" y1="20" x2="50" y2="290" stroke="currentColor" stroke-opacity=".35" stroke-width="2"/>
+          <line x1="50" y1="290" x2="440" y2="290" stroke="currentColor" stroke-opacity=".35" stroke-width="2"/>
+          <line x1="245" y1="20" x2="245" y2="290" stroke="currentColor" stroke-opacity=".15" stroke-dasharray="5 5"/>
+          <line x1="50" y1="155" x2="440" y2="155" stroke="currentColor" stroke-opacity=".15" stroke-dasharray="5 5"/>
+          <text x="60" y="40" font-size="13" font-weight="700" fill="#2E6B4F">ÉNIGMES</text>
+          <text x="255" y="40" font-size="13" font-weight="700" fill="#2E8B57">★ ÉTOILES</text>
+          <text x="60" y="280" font-size="13" font-weight="700" fill="#B44435">POIDS MORTS</text>
+          <text x="255" y="280" font-size="13" font-weight="700" fill="currentColor" fill-opacity=".7">CHEVAUX DE LABOUR</text>
+          <circle cx="330" cy="70" r="14" fill="#4FCB6B" fill-opacity=".9"/><text x="330" y="74" font-size="9" text-anchor="middle" fill="#fff" font-weight="700">Burger</text>
+          <circle cx="385" cy="105" r="11" fill="#4FCB6B" fill-opacity=".75"/>
+          <circle cx="290" cy="120" r="9" fill="#4FCB6B" fill-opacity=".6"/>
+          <circle cx="330" cy="215" r="12" fill="currentColor" fill-opacity=".45"/>
+          <circle cx="395" cy="240" r="9" fill="currentColor" fill-opacity=".35"/>
+          <circle cx="120" cy="90" r="8" fill="#2E6B4F" fill-opacity=".55"/>
+          <circle cx="165" cy="120" r="7" fill="#2E6B4F" fill-opacity=".45"/>
+          <circle cx="110" cy="235" r="10" fill="#FF4B44"/><text x="110" y="261" font-size="10" text-anchor="middle" fill="#B44435" font-weight="700">Tartare 11,4 %</text>
+          <circle cx="160" cy="255" r="7" fill="#FF4B44" fill-opacity=".8"/>
+          <text x="440" y="312" font-size="12" text-anchor="end" fill="currentColor" fill-opacity=".6">Popularité →</text>
+          <text x="22" y="160" font-size="12" fill="currentColor" fill-opacity=".6" transform="rotate(-90 22 160)">Marge →</text>
+        </svg>
+        <p>Chaque plat est positionné. Le tartare, joli sur la carte, détruit de la marge à chaque vente&nbsp;: on le reprice, on le reformule — ou on le sort.</p>
+      </figure>
+
+      <figure class="graph">
+        <figcaption><strong>Votre CA par créneau</strong> — les services qui vous coûtent de l'argent</figcaption>
+        <svg viewBox="0 0 460 340" role="img" aria-label="Chiffre d'affaires par service sur la semaine : certains créneaux sont presque vides">
+          <line x1="40" y1="280" x2="445" y2="280" stroke="currentColor" stroke-opacity=".35" stroke-width="2"/>
+          <g font-size="11" fill="currentColor" fill-opacity=".65" text-anchor="middle">
+            <rect x="52"  y="150" width="20" height="130" rx="3" fill="#4FCB6B" fill-opacity=".85"/>
+            <rect x="80"  y="190" width="20" height="90"  rx="3" fill="#4FCB6B" fill-opacity=".6"/>
+            <rect x="110" y="160" width="20" height="120" rx="3" fill="#4FCB6B" fill-opacity=".8"/>
+            <rect x="138" y="252" width="20" height="28"  rx="3" fill="#FF4B44"/>
+            <rect x="168" y="155" width="20" height="125" rx="3" fill="#4FCB6B" fill-opacity=".8"/>
+            <rect x="196" y="245" width="20" height="35"  rx="3" fill="#FF4B44"/>
+            <rect x="226" y="140" width="20" height="140" rx="3" fill="#4FCB6B" fill-opacity=".85"/>
+            <rect x="254" y="180" width="20" height="100" rx="3" fill="#4FCB6B" fill-opacity=".65"/>
+            <rect x="284" y="120" width="20" height="160" rx="3" fill="#4FCB6B" fill-opacity=".9"/>
+            <rect x="312" y="95"  width="20" height="185" rx="3" fill="#4FCB6B"/>
+            <rect x="342" y="80"  width="20" height="200" rx="3" fill="#4FCB6B"/>
+            <rect x="370" y="60"  width="20" height="220" rx="3" fill="#4FCB6B"/>
+            <rect x="400" y="135" width="20" height="145" rx="3" fill="#4FCB6B" fill-opacity=".85"/>
+            <text x="62"  y="298">Lu</text><text x="120" y="298">Ma</text><text x="178" y="298">Me</text><text x="236" y="298">Je</text><text x="294" y="298">Ve</text><text x="352" y="298">Sa</text><text x="410" y="298">Di</text>
+          </g>
+          <path d="M148 240 q 30 -60 46 -5" fill="none" stroke="#B44435" stroke-width="2" stroke-dasharray="4 3"/>
+          <text x="178" y="222" font-size="11.5" text-anchor="middle" fill="#B44435" font-weight="700">mardi & mercredi soir :</text>
+          <text x="178" y="237" font-size="11.5" text-anchor="middle" fill="#B44435" font-weight="700">quasi vides</text>
+          <text x="445" y="320" font-size="12" text-anchor="end" fill="currentColor" fill-opacity=".6">2 services / jour — midi puis soir</text>
+        </svg>
+        <p>Deux services quasi vides avec l'équipe complète en salle&nbsp;: on arbitre — animation, offre dédiée, planning réduit… ou fermeture assumée du créneau.</p>
+      </figure>
+    </div>
+
   </div>
 </section>
 
@@ -709,74 +777,59 @@ footer li{padding:4px 0}
 <section class="douce" id="offre">
   <div class="wrap">
 
-    <div class="diag-hero">
+    <div class="diag-hero" id="diagnostic">
       <span class="eyebrow">Par où commencer</span>
       <h2>Le Diagnostic de rentabilité : nous chiffrons <em>les euros qui dorment</em> dans votre exploitation.</h2>
-      <p class="sous">Trois ans de comptes, vos données de caisse, et une restitution en rendez-vous qui met des montants précis sur ce que vous perdez — et ce qui est récupérable.</p>
+      <p class="sous">Votre historique comptable, vos données de caisse, et une restitution en rendez-vous qui met des montants précis sur ce que vous perdez — et ce qui est récupérable.</p>
       <ul class="stack">
-        <li>Analyse de 3 exercices comptables et de vos données de caisse <span class="val">valeur 900 €</span></li>
-        <li>Chiffrage poste par poste : coût matière, coulage, masse salariale, plats sous-margés <span class="val">valeur 700 €</span></li>
-        <li>Comparaison à des établissements comparables (benchmarks CHR) <span class="val">valeur 400 €</span></li>
-        <li>Plan d'action priorisé : les 5 premiers gisements, avec les montants en face <span class="val">valeur 500 €</span></li>
-        <li>Restitution en rendez-vous d'1 h 30, à votre établissement ou en visio <span class="val">incluse</span></li>
+        <li>Analyse de vos exercices comptables et de vos données de caisse</li>
+        <li>Chiffrage poste par poste : coût matière, coulage, masse salariale, plats sous-margés</li>
+        <li>Comparaison à des établissements comparables (benchmarks CHR)</li>
+        <li>Plan d'action priorisé : les 5 premiers gisements, avec les montants en face</li>
+        <li>Restitution en rendez-vous d'1 h 30, à votre établissement ou en visio</li>
       </ul>
       <div class="diag-total">
-        <span class="barre">Valeur totale : 2 500 €</span>
-        <span class="prix">1 200 €</span>
-        <span class="cond">intégralement déduits de votre premier trimestre si vous poursuivez en Pilotage ou Direction financière</span>
+        <span class="prix">980 € HT</span>
+        <span class="cond"><strong style="color:#EDEFE9">Offert si vous continuez avec nous</strong> — le diagnostic est intégralement déduit si vous poursuivez avec nous</span>
       </div>
-      <div class="garantie">
-        <span class="ic">🛡</span>
-        <p><strong>Notre garantie :</strong> si le diagnostic ne met pas en évidence au moins 10 000 € de gains annuels potentiels dans votre exploitation, il est intégralement remboursé. Vous gardez le rapport.</p>
-      </div>
-      <div class="diag-cta">
-        <a class="btn btn-rouge" href="#contact">Réserver mon diagnostic</a>
-        <span class="rarete"><strong>4 diagnostics par mois</strong> — c'est notre capacité réelle de production, pas un compteur marketing.</span>
+            <div class="diag-cta">
+        <a class="btn btn-rouge" href="#formulaire">Réserver mon diagnostic</a>
       </div>
     </div>
 
-    <span class="eyebrow">Et ensuite</span>
+    <span class="eyebrow" id="formules" style="scroll-margin-top:90px">Et ensuite</span>
     <h2>Trois niveaux d'accompagnement. <em>Vous montez quand vous êtes prêt.</em></h2>
-    <p class="intro">Chaque formule inclut la précédente. Les honoraires définitifs sont fixés en lettre de mission, après diagnostic.</p>
+    <p class="intro">Chaque formule inclut la précédente. Les honoraires définitifs sont fixés en lettre de mission.</p>
 
     <div class="paliers">
       <div class="palier">
         <h3>Conformité</h3>
         <p class="pour">Pour l'établissement qui veut être en règle, sans y penser.</p>
-        <p class="prix">à partir de 450&nbsp;€ <small>/ mois HT</small></p>
-        <p class="prix-note">selon la taille de l'établissement</p>
-        <p class="ancre">≈ le coût d'un couvert par service</p>
         <ul>
           <li>Tenue et révision comptable</li>
           <li>Déclarations fiscales et TVA</li>
           <li>Bulletins de paie et social CHR</li>
           <li>Bilan annuel et liasse fiscale</li>
         </ul>
-        <a class="btn btn-ligne" href="#contact">Être rappelé</a>
+        <a class="btn btn-ligne" href="#formulaire">Être rappelé</a>
       </div>
 
       <div class="palier star">
         <h3>Pilotage</h3>
         <p class="pour">Pour l'exploitant qui veut décider avec ses chiffres, pas les subir.</p>
-        <p class="prix">à partir de 900&nbsp;€ <small>/ mois HT</small></p>
-        <p class="prix-note">par établissement, dégressif au-delà du premier</p>
-        <p class="ancre">Rentabilisé dès 0,9 point de marge récupéré sur 1,2 M€ de CA</p>
         <ul>
           <li>Tout Conformité, inclus</li>
           <li class="plus">Tableau de bord mensuel — 1 page, 5 chiffres</li>
           <li class="plus">Rendez-vous mensuel 45 min → 3 décisions datées</li>
-          <li class="plus">Suivi coût matière, coulage et fiches techniques</li>
+          <li class="plus">Suivi panier moyen, coût matière, coulage, fiches techniques</li>
           <li class="plus">Alerte immédiate en cas de dérive, pas 2 mois après</li>
         </ul>
-        <a class="btn btn-rouge" href="#contact">Commencer par le diagnostic</a>
+        <a class="btn btn-rouge" href="#formulaire">Commencer par le diagnostic</a>
       </div>
 
       <div class="palier">
         <h3>Direction financière</h3>
         <p class="pour">Pour les groupes et franchisés de 2 établissements et plus.</p>
-        <p class="prix">Sur diagnostic</p>
-        <p class="prix-note">tarif selon le nombre d'établissements</p>
-        <p class="ancre">Une direction financière sectorielle, pour une fraction des 80 k€ d'un DAF salarié</p>
         <ul>
           <li>Tout Pilotage, inclus</li>
           <li class="plus">Consolidation et comparatifs entre vos sites</li>
@@ -785,7 +838,7 @@ footer li{padding:4px 0}
           <li class="plus">Votre interlocuteur face à la banque et au franchiseur</li>
           <li class="plus">Stratégie dirigeant : rémunération, valorisation, préparation de la cession</li>
         </ul>
-        <a class="btn btn-ligne" href="#contact">Parler de votre groupe</a>
+        <a class="btn btn-ligne" href="#formulaire">Parler de votre groupe</a>
       </div>
     </div>
     <p class="offre-note">Prérequis : caisse connectée (Lightspeed, Zelty, L'Addition, SumUp…) — nous prenons en charge la mise en place si nécessaire. Le changement d'expert-comptable est simple : une lettre, et nous nous occupons de tout, y compris de récupérer vos dossiers auprès du cabinet sortant.</p>
@@ -831,7 +884,7 @@ FIN SECTION MASQUÉE -->
       </details>
       <details>
         <summary>« Combien ça coûte, vraiment ? »</summary>
-        <p class="rep">De 450 € HT/mois pour la conformité seule à 900 € et plus pour le pilotage complet, fixés précisément en lettre de mission après diagnostic. Mais le vrai calcul est inverse : combien coûte l'absence de pilotage ? Sur un établissement à 1 M€ avec 2 points de coût matière en dérive, la réponse est 20 000 € par an. C'est ce montant-là que le diagnostic commence par chiffrer chez vous.</p>
+        <p class="rep">Un devis clair et détaillé vous est adressé avant toute mission, puis formalisé en lettre de mission. Le prix dépend du volume de votre établissement, des missions choisies et du degré de collaboration souhaité — données automatisées ou non, nombre de sites, fréquence des rendez-vous. Pas de surprise : tout est écrit avant de commencer.</p>
       </details>
       <details>
         <summary>« Je n'ai pas le temps pour du reporting. »</summary>
@@ -843,7 +896,7 @@ FIN SECTION MASQUÉE -->
       </details>
       <details>
         <summary>« Et si ça ne marche pas chez moi ? »</summary>
-        <p class="rep">C'est le rôle du diagnostic : avant tout engagement récurrent, il chiffre noir sur blanc ce qui est récupérable dans votre exploitation. S'il ne met pas en évidence au moins 10 000 € de gains annuels potentiels, il est remboursé et vous gardez le rapport. Et nos lettres de mission de pilotage sont sans engagement de durée au-delà du préavis d'usage : nous préférons vous garder par les résultats que par le contrat.</p>
+        <p class="rep">Nos intérêts sont alignés sur les vôtres : conformément à la déontologie de l'expert-comptable, une part de nos honoraires peut être indexée sur les points de marge que nous vous faisons gagner — une rémunération au résultat, accessoire à la mission principale, prévue dans la lettre de mission. Autrement dit : nous gagnons davantage quand vous gagnez davantage.</p>
       </details>
       <details>
         <summary>« Vous m'accompagnez aussi à l'achat ou à la revente ? »</summary>
@@ -851,7 +904,7 @@ FIN SECTION MASQUÉE -->
       </details>
       <details>
         <summary>« Vous êtes loin de chez moi. »</summary>
-        <p class="rep">Le cabinet est basé à Bordeaux, au cœur des Grands Hommes, et accompagne des exploitants partout en France. Le pilotage mensuel se fait très bien à distance — c'est même le format préféré de nos clients multi-établissements — avec une revue trimestrielle sur site pour les groupes.</p>
+        <p class="rep">Le cabinet est basé à Bordeaux, en plein centre-ville, et accompagne des exploitants partout en France. Le pilotage mensuel se fait très bien à distance — c'est même le format préféré de nos clients multi-établissements — avec une revue trimestrielle sur site pour les groupes.</p>
       </details>
     </div>
   </div>
@@ -866,11 +919,11 @@ FIN SECTION MASQUÉE -->
       <p class="intro">La seule différence entre les deux scénarios se joue maintenant, en trois étapes :</p>
       <ol class="etapes">
         <li>Vous remplissez le formulaire — 2 minutes. Nous vous rappelons sous 48 h ouvrées pour un échange de 20 minutes, sans engagement.</li>
-        <li>Si votre établissement correspond, nous réalisons le Diagnostic de rentabilité (1 200 €, garanti) : vous repartez avec les montants, quoi qu'il arrive.</li>
-        <li>Vous décidez. Avec nous en Pilotage — le diagnostic est alors déduit — ou seul, avec le plan d'action en main.</li>
+        <li>Si votre établissement correspond, nous réalisons le Diagnostic de rentabilité (980 € HT, offert si vous continuez avec nous) : vous repartez avec les montants, quoi qu'il arrive.</li>
+        <li>Vous décidez. Avec nous, ou seul avec le plan d'action en main.</li>
       </ol>
       <div class="carte-direct">
-        <div class="kick">Vous préférez le direct&nbsp;?</div>
+        <div class="kick">Contact en direct</div>
         <div class="qui">
           <img src="/photo-emmanuel.jpg" alt="Emmanuel Morera, expert-comptable fondateur de ComptaChef">
           <div>
@@ -891,18 +944,23 @@ FIN SECTION MASQUÉE -->
       </p>
     </div>
     <!-- FORMSPREE : créez un formulaire sur formspree.io et remplacez xqpeayel ci-dessous par votre identifiant (ex: xqkrpyzb) -->
-    <form action="https://formspree.io/f/xqpeayel" method="POST">
+    <form id="formulaire" style="scroll-margin-top:84px" action="https://formspree.io/f/xqpeayel" method="POST">
       <div class="champ">
         <label for="nom">Votre nom</label>
         <input id="nom" name="nom" type="text" autocomplete="name" required>
       </div>
       <div class="champ">
         <label for="etab">Votre établissement (ou groupe)</label>
-        <input id="etab" name="etablissement" type="text" placeholder="Nom, ville">
+        <input id="etab" name="etablissement" type="text" placeholder="Nom, ville" required>
+      </div>
+      <div class="champ">
+        <label for="tel">Votre téléphone</label>
+        <input id="tel" name="telephone" type="tel" autocomplete="tel" placeholder="06 00 00 00 00" required>
       </div>
       <div class="champ">
         <label for="profil">Votre situation</label>
-        <select id="profil" name="situation">
+        <select id="profil" name="situation" required>
+          <option value="" selected disabled hidden>— Sélectionnez —</option>
           <option>Un établissement en activité</option>
           <option>Plusieurs établissements</option>
           <option>Franchisé ou futur franchisé</option>
@@ -911,7 +969,8 @@ FIN SECTION MASQUÉE -->
       </div>
       <div class="champ">
         <label for="ca">Chiffre d'affaires annuel (approximatif)</label>
-        <select id="ca" name="chiffre_affaires">
+        <select id="ca" name="chiffre_affaires" required>
+          <option value="" selected disabled hidden>— Sélectionnez —</option>
           <option>Moins de 600 k€</option>
           <option>600 k€ – 1,2 M€</option>
           <option>1,2 M€ – 3 M€</option>
@@ -920,7 +979,7 @@ FIN SECTION MASQUÉE -->
       </div>
       <div class="champ">
         <label for="msg">Votre priorité du moment, en deux lignes</label>
-        <textarea id="msg" name="message" rows="3" placeholder="Ex. : ma marge baisse depuis 6 mois et je ne sais pas d'où ça vient"></textarea>
+        <textarea id="msg" name="message" rows="3" placeholder="Ex. : ma marge baisse depuis 6 mois et je ne sais pas d'où ça vient" required></textarea>
       </div>
       <button class="btn btn-rouge" type="submit" style="width:100%">Demander à être rappelé sous 48 h</button>
     </form>
@@ -933,6 +992,7 @@ FIN SECTION MASQUÉE -->
       <div>
         <div class="foot-logo"><i>◈</i><b>COMPTA</b><span>CHEF</span></div>
         <p style="margin-top:12px">Cabinet d'expertise comptable inscrit à l'Ordre, dédié exclusivement au secteur café-hôtellerie-restauration : comptabilité, pilotage de marge et direction financière externalisée pour restaurants indépendants, groupes multi-sites et franchisés — à Bordeaux, en Nouvelle-Aquitaine et partout en France.</p>
+        <p style="margin-top:10px;font-size:.82rem;color:rgba(233,235,255,.45)">Zone d'intervention : Bordeaux et sa métropole — Mérignac, Pessac, Talence, Bègles, Villenave-d'Ornon, Gradignan, Le Bouscat, Cenon, Lormont, Eysines, Blanquefort — ainsi que le Bassin d'Arcachon, le Libournais et toute la Gironde. Pilotage à distance partout en France.</p>
       </div>
       <div>
         <h4>Nos accompagnements</h4>
@@ -971,7 +1031,7 @@ FIN SECTION MASQUÉE -->
   </div>
 </footer>
 
-<a class="sticky-cta" href="#contact">Réserver mon diagnostic — 1 200 €, garanti</a>
+<a class="sticky-cta" href="#formulaire">Réserver mon diagnostic — 980 € HT</a>
 
 <script>
 const nav=document.getElementById('navbar');
