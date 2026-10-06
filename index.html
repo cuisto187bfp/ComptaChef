@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
 <!-- ===== SEO ===== -->
 <title>Expert-comptable restaurant Bordeaux & toute la France | ComptaChef — Pilotage & rentabilité CHR</title>
@@ -80,7 +81,6 @@ h1{font-size:clamp(2.3rem,5vw,3.8rem)}
 h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
 em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;letter-spacing:0;
   background:linear-gradient(100deg,var(--rouge),var(--rouge-neon));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-sombre em{background:linear-gradient(100deg,var(--rouge-neon),#FF8A85);-webkit-background-clip:text;background-clip:text}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--navy);font-weight:600;margin-bottom:1.2rem}
 .eyebrow::before{content:"";width:26px;height:2px;background:linear-gradient(90deg,var(--rouge),var(--navy))}
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
@@ -101,59 +101,73 @@ section.douce{background:var(--fond-doux)}
 .btn-ligne{background:#fff;color:var(--navy);border:1.5px solid var(--navy)}
 .btn-ligne:hover{box-shadow:0 8px 24px rgba(45,50,130,.2)}
 .btn:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--rouge);outline-offset:3px}
-.sub-cta{display:block;font-size:.82rem;color:var(--gris-nuit);margin-top:10px;text-align:center}
+.sub-cta{display:block;font-size:.82rem;color:var(--gris);margin-top:10px;text-align:center}
 
 /* ================= NAV ================= */
-nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .3s,box-shadow .3s}
+nav{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(22,27,74,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(122,134,255,.18);transition:background .25s,box-shadow .3s,padding .3s}
 .nav-inner{max-width:1280px;margin:0 auto;padding:22px 24px;display:flex;align-items:center;gap:26px;transition:padding .3s}
 .logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.3rem;flex:none}
-.logo b{color:var(--texte-nuit);transition:color .3s}
-.logo span{color:var(--rouge-neon);transition:color .3s}
+.logo b{color:#fff;transition:color .25s}
+.logo span{color:var(--rouge-neon);transition:color .25s}
 .logo i{font-style:normal;color:var(--bleu-neon);margin-right:2px}
-.logo small{display:block;font-size:.6rem;letter-spacing:.3em;color:var(--gris-nuit);font-weight:500;margin-top:-2px;text-transform:uppercase}
-.nav-links{display:flex;gap:26px;font-size:.92rem;font-weight:500;color:var(--gris-nuit);margin-left:8px}
-.nav-links a:hover{filter:brightness(1.5)}
+.logo small{display:block;font-size:.6rem;letter-spacing:.3em;color:#9AA1D6;font-weight:500;margin-top:-2px;text-transform:uppercase;transition:color .25s}
+.nav-links{display:flex;gap:26px;font-size:.92rem;font-weight:500;color:#C9CEF5;margin-left:8px}
+.nav-links a:hover{color:#fff}
 .nav-right{margin-left:auto;display:flex;align-items:center;gap:12px}
 .btn-nav{padding:11px 20px;font-size:.88rem}
-nav.retreci{background:rgba(255,255,255,.92);backdrop-filter:blur(14px);box-shadow:0 6px 30px rgba(30,34,96,.12)}
+.sociaux{display:flex;gap:6px;align-items:center}
+.sociaux a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;color:#fff;transition:background .15s,color .15s}
+.sociaux a:hover{background:#fff;color:var(--navy)}
+.sociaux svg{width:18px;height:18px;fill:currentColor}
+nav.retreci{box-shadow:0 10px 34px rgba(7,11,34,.45)}
 nav.retreci .nav-inner{padding:10px 24px}
-nav.retreci .logo b{color:var(--navy)}
-nav.retreci .logo span{color:var(--rouge)}
-nav.retreci .logo small{color:var(--gris)}
-nav.retreci .nav-links{color:var(--gris)}
 @media(max-width:1000px){.nav-links{display:none}}
 
+
+/* Header dynamique : clair au-dessus des sections sombres */
+@media (prefers-color-scheme: light){
+  nav.inverse{background:rgba(251,250,246,.95);border-bottom-color:var(--bord-clair)}
+  nav.inverse .logo b{color:var(--navy)}
+  nav.inverse .logo span{color:var(--rouge)}
+  nav.inverse .logo small{color:var(--gris)}
+  nav.inverse .nav-links{color:var(--gris)}
+  nav.inverse .nav-links a:hover{color:var(--navy)}
+  nav.inverse .sociaux a{color:var(--navy)}
+  nav.inverse .sociaux a:hover{background:var(--navy);color:#fff}
+  nav.inverse.retreci{box-shadow:0 6px 30px rgba(30,34,96,.14)}
+}
+
 /* ================= HERO SOMBRE ================= */
-.hero-sombre{position:relative;background:var(--nuit);color:var(--texte-nuit);overflow:hidden;padding:168px 0 110px}
+.hero-sombre{position:relative;background:#fff;color:var(--navy);overflow:hidden;padding:168px 0 110px}
 .hero-sombre::before{content:"";position:absolute;inset:0;pointer-events:none;
   background:
-    radial-gradient(600px 400px at 85% -5%, rgba(91,108,255,.18), transparent 60%),
-    radial-gradient(500px 380px at 5% 70%, rgba(255,75,68,.08), transparent 60%),
-    repeating-linear-gradient(to right, transparent 0 79px, rgba(122,134,255,.04) 79px 80px),
-    repeating-linear-gradient(to bottom, transparent 0 79px, rgba(122,134,255,.04) 79px 80px)}
+    radial-gradient(600px 400px at 85% -5%, rgba(91,108,255,.08), transparent 60%),
+    radial-gradient(500px 380px at 5% 70%, rgba(255,75,68,.05), transparent 60%),
+    repeating-linear-gradient(to right, transparent 0 79px, rgba(45,50,130,.035) 79px 80px),
+    repeating-linear-gradient(to bottom, transparent 0 79px, rgba(45,50,130,.035) 79px 80px)}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;position:relative;z-index:2}
-.hero-sombre .accroche{font-size:1.18rem;color:var(--gris-nuit);margin:26px 0 10px;max-width:33rem}
-.hero-sombre .accroche strong{color:var(--texte-nuit)}
+.hero-sombre .accroche{font-size:1.18rem;color:var(--gris);margin:26px 0 10px;max-width:33rem}
+.hero-sombre .accroche strong{color:var(--navy)}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px;align-items:flex-start}
-.hero-meta{display:flex;align-items:center;gap:22px;margin-top:34px;flex-wrap:wrap;color:var(--gris-nuit);font-size:.9rem}
+.hero-meta{display:flex;align-items:center;gap:22px;margin-top:34px;flex-wrap:wrap;color:var(--gris);font-size:.9rem}
 .hero-meta span{display:inline-flex;align-items:center;gap:8px}
 .hero-meta .vcheck{color:var(--vert)}
-.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--verre-bord);background:var(--verre);border-radius:999px;padding:8px 16px;font-size:.82rem;backdrop-filter:blur(6px)}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(45,50,130,.25);background:#fff;color:var(--navy);border-radius:999px;padding:8px 16px;font-size:.82rem;box-shadow:0 4px 14px rgba(30,34,96,.08)}
 .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--vert);box-shadow:0 0 10px var(--vert);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 
 /* fond animé : mini dashboards resto qui traversent le hero */
 .fond-dash{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
-.dash{position:absolute;left:-420px;width:290px;background:linear-gradient(160deg,rgba(91,108,255,.1),rgba(255,75,68,.05)),rgba(11,16,51,.85);border:1px solid rgba(122,134,255,.22);border-radius:16px;padding:18px 18px 16px;opacity:.32;will-change:transform;font-variant-numeric:tabular-nums;animation:tram var(--duree,70s) linear infinite;animation-delay:var(--depart,0s)}
+.dash{position:absolute;left:-420px;width:290px;background:#fff;border:1px solid rgba(45,50,130,.16);box-shadow:0 14px 34px rgba(30,34,96,.08);border-radius:16px;padding:18px 18px 16px;opacity:.55;will-change:transform;font-variant-numeric:tabular-nums;animation:tram var(--duree,70s) linear infinite;animation-delay:var(--depart,0s)}
 @keyframes tram{from{transform:translateX(0) translateY(0)}to{transform:translateX(calc(100vw + 860px)) translateY(var(--derive,0px))}}
 .d1{top:8%;--duree:74s;--depart:-8s;--derive:26px}
-.d2{top:44%;--duree:54s;--depart:-30s;--derive:-20px;width:264px;opacity:.24;filter:blur(.6px)}
-.d3{top:72%;--duree:88s;--depart:-52s;--derive:18px;width:246px;opacity:.2;filter:blur(1px)}
+.d2{top:44%;--duree:54s;--depart:-30s;--derive:-20px;width:264px;opacity:.4;filter:blur(.6px)}
+.d3{top:72%;--duree:88s;--depart:-52s;--derive:18px;width:246px;opacity:.32;filter:blur(1px)}
 .dash h5{font-family:'Space Grotesk',sans-serif;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bleu-neon);margin-bottom:12px;display:flex;justify-content:space-between}
-.dash h5 .pt{color:#7DE79B}
-.dash .ligne{display:flex;justify-content:space-between;font-size:.75rem;color:var(--gris-nuit);padding:5px 0;border-bottom:1px dashed rgba(122,134,255,.15)}
+.dash h5 .pt{color:#2E8B57}
+.dash .ligne{display:flex;justify-content:space-between;font-size:.75rem;color:var(--gris);padding:5px 0;border-bottom:1px dashed rgba(45,50,130,.12)}
 .dash .ligne:last-child{border-bottom:none}
-.dash .ligne b{color:var(--texte-nuit);font-family:'Space Grotesk',sans-serif}
+.dash .ligne b{color:var(--navy);font-family:'Space Grotesk',sans-serif}
 .barres{display:flex;align-items:flex-end;gap:8px;height:56px;margin-top:10px}
 .barres i{flex:1;border-radius:4px 4px 0 0;background:linear-gradient(180deg,var(--bleu-neon),rgba(91,108,255,.25));animation:pousse 2.6s ease-in-out infinite alternate;transform-origin:bottom}
 .barres i:nth-child(1){height:40%}
@@ -176,6 +190,18 @@ nav.retreci .nav-links{color:var(--gris)}
 .ok{color:#7DE79B}.warn{color:#FFC861}.bad{color:var(--rouge-neon)}
 .board-foot{margin-top:14px;font-size:.82rem;color:var(--gris-nuit)}
 .board-foot strong{color:var(--texte-nuit)}
+
+
+/* ================= OUTILS CONNECTÉS ================= */
+.outils{background:#fff;border-top:1px solid var(--bord-clair);border-bottom:1px solid var(--bord-clair);padding:24px 0;overflow:hidden}
+.outils .lbl{display:block;text-align:center;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gris);font-weight:600;margin-bottom:18px}
+.defile{overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.defile .piste{display:flex;align-items:center;gap:64px;width:max-content;animation:defiler 30s linear infinite;padding:4px 0}
+.defile:hover .piste{animation-play-state:paused}
+@keyframes defiler{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.defile .piste{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+.marque{display:inline-block;background:var(--gris);opacity:.8;transition:opacity .2s,background .2s;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain;flex:none}
+.marque:hover{background:var(--navy);opacity:1}
 
 /* ================= QUALIFICATION ================= */
 .quali-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
@@ -204,6 +230,25 @@ nav.retreci .nav-links{color:var(--gris)}
 .cm-op{font-size:1.4rem;color:var(--rouge-neon);font-weight:700}
 .cm-item.res .a{font-size:1.9rem;background:linear-gradient(100deg,var(--rouge-neon),#FF8A85);-webkit-background-clip:text;background-clip:text;color:transparent}
 
+
+/* ================= PARCOURS (TRIPTYQUE) ================= */
+.phases{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
+.phase{background:#fff;border:1px solid var(--bord-clair);border-radius:var(--radius);padding:32px 28px;box-shadow:0 14px 40px rgba(30,34,96,.06);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.phase:hover{transform:translateY(-4px);box-shadow:0 22px 56px rgba(30,34,96,.12)}
+.phase .pnum{width:42px;height:42px;border-radius:50%;background:linear-gradient(120deg,var(--rouge),var(--rouge-neon));color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:16px}
+.phase h3{font-family:'Space Grotesk',sans-serif;font-size:1.25rem;font-weight:700;letter-spacing:.02em}
+.phase .psub{color:var(--rouge);font-weight:600;font-size:.9rem;margin:4px 0 16px}
+.phase ul{list-style:none;flex:1}
+.phase li{font-size:.92rem;color:var(--gris);padding:8px 0 8px 24px;position:relative;border-bottom:1px solid var(--fond-doux)}
+.phase li:last-child{border-bottom:none}
+.phase li::before{content:"\2192";position:absolute;left:0;color:var(--rouge);font-weight:700}
+.phase li strong{color:var(--navy)}
+.phase .pcle{margin-top:16px;background:var(--fond-doux);border-radius:12px;padding:12px 16px;font-size:.85rem;color:var(--gris)}
+.phase .pcle strong{color:var(--navy);font-family:'Space Grotesk',sans-serif}
+.parcours-note{margin-top:24px;font-size:.92rem;color:var(--gris)}
+.parcours-note a{color:var(--rouge);font-weight:600}
+@media (max-width:940px){.phases{grid-template-columns:1fr}}
+
 /* ================= MÉTHODE ================= */
 .methode-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
 .met{background:#fff;border:1px solid var(--bord-clair);border-radius:var(--radius);padding:34px 30px;box-shadow:0 14px 40px rgba(30,34,96,.06);transition:transform .2s,box-shadow .2s}
@@ -211,6 +256,27 @@ nav.retreci .nav-links{color:var(--gris)}
 .met .chiffre{font-family:'Space Grotesk',sans-serif;font-size:2.6rem;font-weight:700;line-height:1;background:linear-gradient(120deg,var(--rouge),var(--navy));-webkit-background-clip:text;background-clip:text;color:transparent}
 .met h3{font-size:1.05rem;margin:10px 0 10px}
 .met p{font-size:.94rem;color:var(--gris)}
+
+
+/* ================= COMPTE DE RÉSULTAT ================= */
+.cdr-table{border:1px solid var(--bord-clair);border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:0 14px 40px rgba(30,34,96,.06)}
+.cdr-head{display:grid;grid-template-columns:.8fr 1fr 1.1fr;padding:16px 28px;background:var(--navy);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;gap:24px}
+.cdr-row{display:grid;grid-template-columns:.8fr 1fr 1.1fr;align-items:start;padding:22px 28px;border-bottom:1px solid var(--fond-doux);gap:24px}
+.cdr-indic{font-size:.9rem;color:var(--gris)}
+.cdr-indic strong{color:var(--navy);font-variant-numeric:tabular-nums}
+.cdr-row.total{background:var(--fond-doux)}
+.cdr-row.total .cdr-poste{color:var(--rouge)}
+.cdr-row:last-child{border-bottom:none}
+.cdr-row:hover{background:#FBFBFE}
+.cdr-poste{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.05rem;color:var(--navy)}
+.cdr-poste small{display:block;font-family:'Outfit',sans-serif;font-weight:400;font-size:.82rem;color:var(--gris);margin-top:4px;line-height:1.5}
+.cdr-levier{font-size:.95rem;color:var(--gris)}
+.cdr-levier strong{color:var(--navy)}
+.cdr-note{margin-top:22px;font-size:.92rem;color:var(--gris);max-width:54em}
+@media (max-width:940px){
+  .cdr-head{display:none}
+  .cdr-row{grid-template-columns:1fr;gap:10px;padding:18px 20px}
+}
 
 /* ================= OFFRE ================= */
 .diag-hero{background:var(--nuit);color:var(--texte-nuit);border-radius:calc(var(--radius) + 6px);padding:50px 54px;margin-bottom:60px;position:relative;overflow:hidden}
@@ -301,6 +367,59 @@ nav.retreci .nav-links{color:var(--gris)}
 .champ input:focus,.champ select:focus,.champ textarea:focus{outline:2px solid var(--rouge-neon);border-color:transparent}
 .champ select option{color:var(--navy);background:#fff}
 
+
+/* ================= CARTE CONTACT DIRECT ================= */
+.carte-direct{background:var(--papier);color:var(--navy);border-radius:var(--radius);border-top:3px solid var(--rouge);padding:26px 28px;margin-top:30px;max-width:430px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.carte-direct .kick{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--rouge);font-weight:700;margin-bottom:18px;font-family:'Space Grotesk',sans-serif}
+.carte-direct .qui{display:flex;gap:18px;align-items:center;margin-bottom:18px}
+.carte-direct .qui img{width:76px;height:76px;border-radius:50%;object-fit:cover;box-shadow:0 6px 18px rgba(30,34,96,.25)}
+.carte-direct .nom{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.35rem;line-height:1.1}
+.carte-direct .fonction{color:var(--gris);font-size:.95rem;margin-top:2px}
+.carte-direct .coords a{display:inline-block;font-weight:700;color:var(--navy);text-decoration:underline;text-underline-offset:3px;margin:4px 18px 4px 0;font-size:1.02rem;font-variant-numeric:tabular-nums}
+.carte-direct .coords a:hover{color:var(--rouge)}
+
+
+/* ================= MODE SOMBRE AUTOMATIQUE ================= */
+:root{color-scheme:light dark}
+@media (prefers-color-scheme: dark){
+  :root{
+    --papier:#070B22;
+    --fond-doux:#0B1033;
+    --navy:#E9EBFF;          /* le texte principal devient clair */
+    --navy-fonce:#0B1033;
+    --gris:#9AA1D6;
+    --bord-clair:rgba(122,134,255,.22);
+  }
+  body{background:var(--papier)}
+  nav{background:rgba(7,11,34,.92);border-bottom-color:rgba(122,134,255,.2)}
+  nav.retreci{box-shadow:0 6px 30px rgba(0,0,0,.5)}
+  .hero-sombre{background:#070B22}
+  .hero-sombre::before{
+    background:
+      radial-gradient(600px 400px at 85% -5%, rgba(91,108,255,.16), transparent 60%),
+      radial-gradient(500px 380px at 5% 70%, rgba(255,75,68,.07), transparent 60%),
+      repeating-linear-gradient(to right, transparent 0 79px, rgba(122,134,255,.05) 79px 80px),
+      repeating-linear-gradient(to bottom, transparent 0 79px, rgba(122,134,255,.05) 79px 80px)}
+  .pill,.dash,.quali-col,.met,.palier,.cdr-table,.phase,.faq details{background:#0E1440;border-color:rgba(122,134,255,.22)}
+  .outils{background:#0B1033}
+  .offre{background:#0B1033}
+  .dash{box-shadow:0 14px 34px rgba(0,0,0,.45)}
+  .dash h5 .pt{color:#7DE79B}
+  .cdr-head{background:#1E2260;color:#fff}
+  .cdr-row:hover{background:#101747}
+  .cdr-row.total{background:#131A4F}
+  .met .chiffre{background:linear-gradient(120deg,var(--rouge-neon),#8A93FF);-webkit-background-clip:text;background-clip:text}
+  .btn-navy{background:#2D3282}
+  .btn-ligne{background:transparent;color:#E9EBFF;border-color:#E9EBFF}
+  .btn-ligne:hover{background:#E9EBFF;color:#070B22}
+  .palier.star{border-color:var(--rouge-neon)}
+  .palier li{border-bottom-color:rgba(122,134,255,.12)}
+  .carte-direct{background:#0E1440;border-top-color:var(--rouge-neon);box-shadow:0 20px 50px rgba(0,0,0,.6)}
+  .pcle,.chiffre-cle{background:#131A4F}
+  .board{box-shadow:0 30px 70px -30px rgba(0,0,0,.9)}
+  .champ select option{color:#1B2420;background:#fff}
+}
+
 /* ================= FOOTER ================= */
 footer{background:var(--navy-fonce);color:rgba(233,235,255,.65);padding:52px 0 36px;font-size:.88rem}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
@@ -336,11 +455,19 @@ footer li{padding:4px 0}
   <div class="nav-inner">
     <a class="logo" href="#top"><i>◈</i><b>COMPTA</b><span>CHEF</span><small>Restauration</small></a>
     <div class="nav-links">
+      <a href="#parcours">Le parcours</a>
       <a href="#methode">La méthode</a>
       <a href="#offre">Diagnostic & formules</a>
       <a href="#faq">Questions</a>
+      <a href="/club.html">Le Club</a>
+      <a href="/articles.html">Articles</a>
     </div>
     <div class="nav-right">
+      <div class="sociaux">
+        <a href="https://www.linkedin.com/in/emmanuel-morera-469abb146/" aria-label="LinkedIn" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></a>
+        <a href="https://www.instagram.com/comptachef/" aria-label="Instagram" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm7.85-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></a>
+        <a href="https://wa.me/33699846862" aria-label="WhatsApp" rel="noopener" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg></a>
+      </div>
       <a class="btn btn-rouge btn-nav" href="#contact">Réserver mon diagnostic</a>
     </div>
   </div>
@@ -370,20 +497,21 @@ footer li{padding:4px 0}
 
   <div class="wrap hero-grid">
     <div>
-      <span class="pill"><span class="dot"></span>Cabinet inscrit à l'Ordre · Bordeaux · toute la France</span>
-      <h1 style="margin-top:26px">Récupérez 2 à 3 points de marge <em>sans travailler une heure de plus</em></h1>
+      <span class="pill"><span class="dot"></span>Expert-comptable spécialisé restauration · Inscrit à l'Ordre · Bordeaux & toute la France</span>
+      <h1 style="margin-top:26px">Récupérez des points de marge <em>sans travailler une heure de plus</em></h1>
       <p class="accroche">Nous aidons les restaurateurs qui réalisent <strong>plus de 600 k€ de CA par an</strong> à récupérer des points de marge grâce à un pilotage spécifique, connecté à leurs outils. <strong>2 points de marge sur 1 M€ de CA, c'est 20 000 € par an</strong> — voilà ce que nous venons chercher dans vos chiffres.</p>
       <div class="hero-actions">
         <div>
           <a class="btn btn-rouge" href="#offre">Chiffrer ce que je laisse dormir</a>
           <span class="sub-cta">Diagnostic de rentabilité · 1 200 € · garanti</span>
         </div>
-        <a class="btn btn-ligne-nuit" href="#methode">Voir comment ça marche</a>
+        <a class="btn btn-ligne" href="#methode">Voir comment ça marche</a>
       </div>
       <div class="hero-meta">
-        <span><span class="vcheck">✓</span> 100 % restauration, rien d'autre</span>
+        <span><span class="vcheck">✓</span> 100 % restauration</span>
         <span><span class="vcheck">✓</span> 45 min de votre temps par mois</span>
         <span><span class="vcheck">✓</span> Données de caisse automatisées</span>
+        <span><span class="vcheck">★</span> <a href="https://www.google.com/maps/search/?api=1&query=ComptaChef+Expert-comptable+Bordeaux" rel="noopener" target="_blank" style="text-decoration:underline;text-underline-offset:3px">5,0 sur Google · 13 avis</a></span>
       </div>
     </div>
 
@@ -403,6 +531,30 @@ footer li{padding:4px 0}
     </aside>
   </div>
 </header>
+
+
+<!-- ============ OUTILS CONNECTÉS ============ -->
+<div class="outils" aria-label="Outils connectés">
+  <div class="wrap"><span class="lbl">Connecté à vos outils du quotidien</span></div>
+  <div class="defile">
+    <div class="piste">
+        <span class="marque" role="img" aria-label="Pennylane" title="Pennylane" style="width:45px;height:52px;-webkit-mask-image:url(/outil-pennylane.png);mask-image:url(/outil-pennylane.png)"></span>
+        <span class="marque" role="img" aria-label="Silae" title="Silae" style="width:93px;height:36px;-webkit-mask-image:url(/outil-silae.png);mask-image:url(/outil-silae.png)"></span>
+        <span class="marque" role="img" aria-label="L'Addition" title="L'Addition" style="width:172px;height:28px;-webkit-mask-image:url(/outil-laddition.png);mask-image:url(/outil-laddition.png)"></span>
+        <span class="marque" role="img" aria-label="JDC" title="JDC" style="width:114px;height:34px;-webkit-mask-image:url(/outil-jdc.png);mask-image:url(/outil-jdc.png)"></span>
+        <span class="marque" role="img" aria-label="Lightspeed" title="Lightspeed" style="width:128px;height:32px;-webkit-mask-image:url(/outil-lightspeed.png);mask-image:url(/outil-lightspeed.png)"></span>
+        <span class="marque" role="img" aria-label="Combo" title="Combo" style="width:124px;height:30px;-webkit-mask-image:url(/outil-combo.png);mask-image:url(/outil-combo.png)"></span>
+        <span class="marque" role="img" aria-label="Skello" title="Skello" style="width:104px;height:34px;-webkit-mask-image:url(/outil-skello.png);mask-image:url(/outil-skello.png)"></span>
+        <span class="marque" role="img" aria-label="Pennylane" title="Pennylane" style="width:45px;height:52px;-webkit-mask-image:url(/outil-pennylane.png);mask-image:url(/outil-pennylane.png)"></span>
+        <span class="marque" role="img" aria-label="Silae" title="Silae" style="width:93px;height:36px;-webkit-mask-image:url(/outil-silae.png);mask-image:url(/outil-silae.png)"></span>
+        <span class="marque" role="img" aria-label="L'Addition" title="L'Addition" style="width:172px;height:28px;-webkit-mask-image:url(/outil-laddition.png);mask-image:url(/outil-laddition.png)"></span>
+        <span class="marque" role="img" aria-label="JDC" title="JDC" style="width:114px;height:34px;-webkit-mask-image:url(/outil-jdc.png);mask-image:url(/outil-jdc.png)"></span>
+        <span class="marque" role="img" aria-label="Lightspeed" title="Lightspeed" style="width:128px;height:32px;-webkit-mask-image:url(/outil-lightspeed.png);mask-image:url(/outil-lightspeed.png)"></span>
+        <span class="marque" role="img" aria-label="Combo" title="Combo" style="width:124px;height:30px;-webkit-mask-image:url(/outil-combo.png);mask-image:url(/outil-combo.png)"></span>
+        <span class="marque" role="img" aria-label="Skello" title="Skello" style="width:104px;height:34px;-webkit-mask-image:url(/outil-skello.png);mask-image:url(/outil-skello.png)"></span>
+    </div>
+  </div>
+</div>
 
 <!-- ============ QUALIFICATION ============ -->
 <section class="douce">
@@ -431,34 +583,59 @@ footer li{padding:4px 0}
   </div>
 </section>
 
-<!-- ============ CONSTAT + CALCUL ============ -->
-<div class="constat" id="probleme">
+
+<!-- ============ PARCOURS / TRIPTYQUE ============ -->
+<section id="parcours">
   <div class="wrap">
-    <div class="constat-grid">
-      <h2>Le marché de la restauration grandit. Les restaurants ferment. La différence entre les deux&nbsp;: <em>le pilotage.</em></h2>
-      <div class="fait">
-        <div class="n">+15 à 20 %</div>
-        <div class="l">de hausse des matières premières depuis 2024 — pour un coût matière qui pèse déjà 34 % du CA moyen du secteur.</div>
+    <span class="eyebrow">Votre cycle de vie, notre métier</span>
+    <h2>Un restaurant, ça s'achète, ça s'exploite, <em>ça se revend.</em></h2>
+    <p class="intro">La plupart des cabinets ne voient que la phase du milieu. Nous vous accompagnons sur les trois moments qui font — ou défont — le patrimoine d'un restaurateur.</p>
+
+    <div class="phases">
+      <div class="phase">
+        <div class="pnum">1</div>
+        <h3>J'ENTRE</h3>
+        <p class="psub">Valoriser, financer, sécuriser</p>
+        <ul>
+          <li><strong>Valoriser le fonds</strong> en croisant 2 méthodes : multiple du CA TTC (≈ 40-100 %) et multiple de l'EBE retraité (≈ 3-5×). On défend une fourchette, pas un chiffre au doigt mouillé.</li>
+          <li><strong>Financer :</strong> prévisionnel, dossier bancaire, garanties BPI — un dossier solide fait baisser le taux et l'apport exigé</li>
+          <li><strong>Sécuriser :</strong> bail commercial 3-6-9 (ILC, décret Pinel) et acte d'achat du fonds audités avec nos avocats partenaires</li>
+        </ul>
+        <div class="pcle"><strong>Use case :</strong> un fonds affiché 350 k€, requalifié ticket Z en main, négocié 310 k€.</div>
       </div>
-      <div class="fait">
-        <div class="n">2 mois</div>
-        <div class="l">c'est le retard avec lequel un exploitant sans pilotage découvre une dérive de marge. Nous le ramenons à 30 jours.</div>
+
+      <div class="phase">
+        <div class="pnum">2</div>
+        <h3>J'EXPLOITE</h3>
+        <p class="psub">Optimiser chaque poste du résultat</p>
+        <ul>
+          <li><strong>Le pilotage mensuel</strong> par la méthode 5 · 3 · 45 — détaillée juste en dessous</li>
+          <li><strong>Chaque ligne du compte de résultat</strong> travaillée avec ses ratios cibles : CA, coût matière, masse salariale, charges externes</li>
+          <li><strong>La TVA sécurisée</strong> — l'angle mort fiscal que seul un expert-comptable traite vraiment</li>
+        </ul>
+        <div class="pcle">C'est le cœur du réacteur : <strong>les deux sections suivantes</strong> vous montrent exactement comment.</div>
+      </div>
+
+      <div class="phase">
+        <div class="pnum">3</div>
+        <h3>JE REVENDS</h3>
+        <p class="psub">Maximiser la valeur de sortie</p>
+        <ul>
+          <li><strong>Rémunération du dirigeant :</strong> l'arbitrage SARL/SAS, mix salaire + dividendes (flat tax 30 %) calibré sur votre résultat et votre trésorerie personnelle</li>
+          <li><strong>Un EBE retraité lisible</strong> (rémunération neutralisée) qui fait grimper la valorisation le jour de la vente</li>
+          <li><strong>Préparer la sortie :</strong> plus-value, abattements, apport-cession — et le même accompagnement qu'à l'achat, cette fois dans votre camp de vendeur</li>
+        </ul>
+        <div class="pcle">La valeur de sortie se construit <strong>2 à 3 ans avant</strong> la mise en vente — pas le jour de l'estimation.</div>
       </div>
     </div>
-    <div class="constat-math" role="img" aria-label="2 points de marge multipliés par 1 million d'euros de chiffre d'affaires égalent 20 000 euros par an">
-      <div class="cm-item"><div class="a">2 pts</div><div class="b">de marge récupérés</div></div>
-      <div class="cm-op">×</div>
-      <div class="cm-item"><div class="a">1 M€</div><div class="b">de chiffre d'affaires</div></div>
-      <div class="cm-op">=</div>
-      <div class="cm-item res"><div class="a">20 000 €</div><div class="b">par an, chaque année</div></div>
-    </div>
+    <p class="parcours-note">Le détail complet des trois phases — et les partenaires experts qui interviennent à chacune — est sur la page du <a href="/club.html">Club ComptaChef →</a></p>
   </div>
-</div>
+</section>
 
 <!-- ============ MÉTHODE 5·3·45 ============ -->
 <section id="methode">
   <div class="wrap">
-    <span class="eyebrow">La méthode 5 · 3 · 45</span>
+    <span class="eyebrow">Phase 2 · J’exploite — la méthode 5 · 3 · 45</span>
     <h2>Cinq chiffres. Trois décisions. <em>Quarante-cinq minutes par mois.</em></h2>
     <p class="intro">Conçue pour quelqu'un qui travaille 70 heures par semaine : vos données remontent automatiquement — caisse connectée, factures fournisseurs — vous ne saisissez rien, vous ne cherchez rien. Vous décidez.</p>
     <div class="methode-grid">
@@ -478,6 +655,51 @@ footer li{padding:4px 0}
         <p>Un rendez-vous mensuel, préparé par nous, qui va droit aux décisions. C'est le seul temps que la méthode vous demande — le reste est automatisé ou pris en charge par le cabinet.</p>
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- ============ COMPTE DE RÉSULTAT ============ -->
+<section class="douce" id="compte-de-resultat" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Phase 2 · J’exploite — où sont les points de marge</span>
+    <h2>Votre compte de résultat, <em>ligne par ligne.</em></h2>
+    <p class="intro">Les points de marge ne se trouvent pas "en général" — ils se trouvent poste par poste. Voici comment nous lisons chaque ligne de votre compte de résultat, et le levier que nous actionnons en face.</p>
+
+    <div class="cdr-table">
+      <div class="cdr-head"><div>Poste</div><div>Indicateurs & cibles</div><div>Nos leviers</div></div>
+      <div class="cdr-row">
+        <div class="cdr-poste">Chiffre d'affaires</div>
+        <div class="cdr-indic">Couverts · <strong>ticket moyen</strong> · taux de remplissage par service · CA / place assise · CA / m² · rotation des tables</div>
+        <div class="cdr-levier"><strong>Menu engineering</strong> (prix × volume × mix), plats à mettre en avant, suggestion formée en salle, arbitrage des plateformes (25-35 % de commission).</div>
+      </div>
+      <div class="cdr-row">
+        <div class="cdr-poste">Coût matière <small>(food cost)</small></div>
+        <div class="cdr-indic">Cible <strong>28-32 %</strong> du CA selon concept · ratio boisson <strong>20-25 %</strong> · écart théorique vs réel (coulage : <strong>10-15 %</strong> des achats en pertes inexpliquées)</div>
+        <div class="cdr-levier"><strong>Fiches techniques</strong> plat par plat et <strong>lecture graphique de la carte</strong> : matrice BCG popularité × rentabilité (étoiles, chevaux de labour, énigmes, poids morts), dispersion des prix selon les principes d'Omnès, inventaire tournant.</div>
+      </div>
+      <div class="cdr-row">
+        <div class="cdr-poste">Masse salariale</div>
+        <div class="cdr-indic">Cible <strong>30-35 %</strong> du CA charges incluses · CA / heure travaillée · <strong>1 point de trop sur 1 M€ = 10 000 €/an</strong></div>
+        <div class="cdr-levier"><strong>CA par créneau et taux d'occupation :</strong> arbitrer chaque service par les chiffres, plannings en face du flux réel — et fidéliser sans tout payer en charges (PPV, PEE, CESU), car la masse salariale se pilote sans casser l'humain.</div>
+      </div>
+      <div class="cdr-row total">
+        <div class="cdr-poste">Prime cost <small>matière + personnel</small></div>
+        <div class="cdr-indic">Le chiffre roi : cible <strong>&lt; 60-65 %</strong> du CA — au-dessus de 68 %, enquête immédiate</div>
+        <div class="cdr-levier">C'est <strong>l'indicateur de survie</strong> d'un établissement — le premier chiffre de votre tableau de bord mensuel.</div>
+      </div>
+      <div class="cdr-row">
+        <div class="cdr-poste">Charges externes <small>Loyers · énergie · assurances · logiciels…</small></div>
+        <div class="cdr-indic"><strong>8-12 %</strong> du CA, souvent sans contrôle · loyer cible <strong>&lt; 8-10 %</strong> du CA · indexation ILC surveillée</div>
+        <div class="cdr-levier"><strong>Audit annuel poste par poste</strong> et renégociation : énergie, assurances, stack logiciel, abonnements dormants. Chaque contrat reconduit sans examen depuis 2 ans cache presque toujours des euros.</div>
+      </div>
+      <div class="cdr-row">
+        <div class="cdr-poste">Focus TVA <small>hors compte de résultat, mais 10 k€ en jeu</small></div>
+        <div class="cdr-indic">3 taux dans une même addition : <strong>20 %</strong> alcool · <strong>10 %</strong> sur place · <strong>5,5 %</strong> à emporter conditionné · <strong>1 point d'erreur sur 1 M€ ≈ 10 000 €</strong> de perte ou de risque par an</div>
+        <div class="cdr-levier"><strong>Paramétrage de caisse audité :</strong> trop collecté = marge offerte au fisc ; pas assez = rappel + intérêts + majoration. On sécurise, vente après vente.</div>
+      </div>
+    </div>
+    <p class="cdr-note">C'est le déroulé concret du rendez-vous mensuel&nbsp;: chaque mois, nous zoomons sur la ligne qui a le plus bougé — et les 3 décisions du mois sortent de là. Benchmarks sectoriels fournis poste par poste&nbsp;: on vous dit où vous payez au-dessus du marché. Et parce qu'un graphique vaut mille lignes, chaque analyse est restituée visuellement&nbsp;: matrice BCG de votre carte, dispersion des prix (Omnès), CA par créneau — vos chiffres en images, lisibles en 5 minutes.</p>
   </div>
 </section>
 
@@ -561,6 +783,7 @@ footer li{padding:4px 0}
           <li class="plus">Benchmarks anonymisés de notre portefeuille CHR</li>
           <li class="plus">Revue trimestrielle : ouvertures, investissements, financement</li>
           <li class="plus">Votre interlocuteur face à la banque et au franchiseur</li>
+          <li class="plus">Stratégie dirigeant : rémunération, valorisation, préparation de la cession</li>
         </ul>
         <a class="btn btn-ligne" href="#contact">Parler de votre groupe</a>
       </div>
@@ -595,25 +818,6 @@ puis remplacez les [crochets] par vos chiffres. Ne publiez JAMAIS de faux témoi
 
 
 FIN SECTION MASQUÉE -->
-<!-- ============ LEAD MAGNET ============ -->
-<section class="douce" id="guide" style="padding-top:0">
-  <div class="wrap">
-    <div class="aimant">
-      <div>
-        <h2>Pas encore prêt ? <em style="background:linear-gradient(100deg,#FF8A85,var(--rouge-neon));-webkit-background-clip:text;background-clip:text">Commencez par le guide.</em></h2>
-        <p>« Les 5 ratios qui décident de la survie de votre restaurant » — 12 pages, vos cibles par type d'établissement, et la méthode pour les calculer ce soir avec votre caisse. Le même référentiel que nous utilisons en mission.</p>
-      </div>
-      <div>
-        <!-- FORMSPREE guide : même principe, remplacez VOTRE_ID_GUIDE (vous pouvez créer un 2e formulaire pour distinguer les demandes) -->
-        <form action="https://formspree.io/f/xqpeayel" method="POST">
-          <input type="email" name="email" placeholder="Votre email professionnel" aria-label="Votre email professionnel" autocomplete="email" required>
-          <button class="btn btn-rouge" type="submit">Recevoir le guide</button>
-        </form>
-        <p class="rgpd">Un email par mois maximum : un ratio décrypté, un cas concret. Désinscription en un clic. Vos données restent chez nous — secret professionnel oblige.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ============ FAQ ============ -->
 <section class="faq" id="faq">
@@ -642,6 +846,10 @@ FIN SECTION MASQUÉE -->
         <p class="rep">C'est le rôle du diagnostic : avant tout engagement récurrent, il chiffre noir sur blanc ce qui est récupérable dans votre exploitation. S'il ne met pas en évidence au moins 10 000 € de gains annuels potentiels, il est remboursé et vous gardez le rapport. Et nos lettres de mission de pilotage sont sans engagement de durée au-delà du préavis d'usage : nous préférons vous garder par les résultats que par le contrat.</p>
       </details>
       <details>
+        <summary>« Vous m'accompagnez aussi à l'achat ou à la revente ? »</summary>
+        <p class="rep">Oui — c'est même notre différence. Un restaurant, ça s'achète, ça s'exploite et ça se revend : nous intervenons sur les trois phases. À l'achat : valorisation du fonds (multiple du CA et de l'EBE retraité), dossier de financement, audit du bail et de l'acte. À la revente : EBE retraité lisible, optimisation de la plus-value, accompagnement de la transaction. La valeur de sortie se prépare 2 à 3 ans avant la vente — pas le jour de l'estimation.</p>
+      </details>
+      <details>
         <summary>« Vous êtes loin de chez moi. »</summary>
         <p class="rep">Le cabinet est basé à Bordeaux, au cœur des Grands Hommes, et accompagne des exploitants partout en France. Le pilotage mensuel se fait très bien à distance — c'est même le format préféré de nos clients multi-établissements — avec une revue trimestrielle sur site pour les groupes.</p>
       </details>
@@ -661,14 +869,28 @@ FIN SECTION MASQUÉE -->
         <li>Si votre établissement correspond, nous réalisons le Diagnostic de rentabilité (1 200 €, garanti) : vous repartez avec les montants, quoi qu'il arrive.</li>
         <li>Vous décidez. Avec nous en Pilotage — le diagnostic est alors déduit — ou seul, avec le plan d'action en main.</li>
       </ol>
+      <div class="carte-direct">
+        <div class="kick">Vous préférez le direct&nbsp;?</div>
+        <div class="qui">
+          <img src="/photo-emmanuel.jpg" alt="Emmanuel Morera, expert-comptable fondateur de ComptaChef">
+          <div>
+            <div class="nom">Emmanuel Morera</div>
+            <div class="fonction">Expert-comptable · Fondateur</div>
+          </div>
+        </div>
+        <div class="coords">
+          <a href="tel:+33699846862">06 99 84 68 62</a>
+          <a href="https://wa.me/33699846862" rel="noopener" target="_blank">WhatsApp</a>
+          <a href="mailto:contact@comptachef.com">contact@comptachef.com</a>
+        </div>
+      </div>
       <p class="final-coord">
         📍 Centre commercial des Grands Hommes, 1er étage, 33000 Bordeaux<br>
-        📞 <a href="tel:+33699846862">06 99 84 68 62</a><br>
-        🗺 <a href="https://www.google.com/maps/search/Centre+commercial+des+Grands+Hommes+Bordeaux" rel="noopener">Voir sur Google Maps ↗</a><br>
+        🗺 <a href="https://www.google.com/maps/search/?api=1&query=ComptaChef+Expert-comptable+Bordeaux" rel="noopener">Voir la fiche Google — 5,0 ★ (13 avis) ↗</a><br>
         Cabinet inscrit à l'Ordre des experts-comptables · interventions à Bordeaux, en Nouvelle-Aquitaine et partout en France
       </p>
     </div>
-    <!-- FORMSPREE : créez un formulaire sur formspree.io et remplacez VOTRE_ID ci-dessous par votre identifiant (ex: xqkrpyzb) -->
+    <!-- FORMSPREE : créez un formulaire sur formspree.io et remplacez xqpeayel ci-dessous par votre identifiant (ex: xqkrpyzb) -->
     <form action="https://formspree.io/f/xqpeayel" method="POST">
       <div class="champ">
         <label for="nom">Votre nom</label>
@@ -726,8 +948,9 @@ FIN SECTION MASQUÉE -->
         <h4>Le cabinet</h4>
         <ul>
           <li><a href="#methode">La méthode 5 · 3 · 45</a></li>
-          <li><a href="#guide">Guide des 5 ratios</a></li>
           <li><a href="#faq">Questions fréquentes</a></li>
+          <li><a href="/club.html">Le Club ComptaChef</a></li>
+          <li><a href="/articles.html">Articles & publications</a></li>
         </ul>
       </div>
       <div>
@@ -735,14 +958,15 @@ FIN SECTION MASQUÉE -->
         <ul class="foot-contact">
           <li>📍 Centre commercial des Grands Hommes, 1er étage, 33000 Bordeaux</li>
           <li>📞 <a href="tel:+33699846862">06 99 84 68 62</a></li>
-          <li>🗺 <a href="https://www.google.com/maps/search/Centre+commercial+des+Grands+Hommes+Bordeaux" rel="noopener">Voir sur Google Maps ↗</a></li>
+          <li>✉️ <a href="mailto:contact@comptachef.com">contact@comptachef.com</a></li>
+          <li>🗺 <a href="https://www.google.com/maps/search/?api=1&query=ComptaChef+Expert-comptable+Bordeaux" rel="noopener">Voir la fiche Google — 5,0 ★ (13 avis) ↗</a></li>
           <li style="margin-top:8px"><a href="#">LinkedIn</a> · <a href="#">Instagram</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-legal">
       <span>© 2026 ComptaChef. Tous droits réservés — Honoraires fixés en lettre de mission</span>
-<span><a href="/mentions-legales.html">Mentions légales</a> · <a href="/confidentialite.html">Confidentialité</a></span>
+      <span><a href="/mentions-legales.html">Mentions légales</a> · <a href="/confidentialite.html">Confidentialité</a></span>
     </div>
   </div>
 </footer>
@@ -751,7 +975,16 @@ FIN SECTION MASQUÉE -->
 
 <script>
 const nav=document.getElementById('navbar');
-addEventListener('scroll',()=>{nav.classList.toggle('retreci',scrollY>40)},{passive:true});
+const zonesSombres=[...document.querySelectorAll('.diag-hero, .final')];
+function majNav(){
+  nav.classList.toggle('retreci',scrollY>40);
+  const nb=nav.offsetHeight;
+  const surSombre=zonesSombres.some(el=>{const r=el.getBoundingClientRect();return r.top<nb&&r.bottom>0;});
+  nav.classList.toggle('inverse',surSombre);
+}
+addEventListener('scroll',majNav,{passive:true});
+addEventListener('resize',majNav,{passive:true});
+majNav();
 </script>
 
 </body>

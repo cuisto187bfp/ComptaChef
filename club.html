@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Club ComptaChef — L'écosystème des restaurateurs qui pilotent | Bordeaux & toute la France</title>
+<meta name="description" content="Le Club ComptaChef : un accompagnement sur tout le cycle de vie de votre restaurant — j'entre, j'exploite, je revends — et un réseau de partenaires experts de la restauration.">
+<link rel="canonical" href="https://www.comptachef.com/club.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#2D3282;--navy-fonce:#1E2260;--rouge:#C4302B;--rouge-neon:#FF4B44;--vert:#4FCB6B;--papier:#FBFAF6;--fond-doux:#F6F7FC;--gris:#5F66A0;--bord:rgba(45,50,130,.18);--radius:18px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--papier);color:var(--navy);line-height:1.65;font-size:17px}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.02em}
+em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;background:linear-gradient(100deg,var(--rouge),var(--rouge-neon));-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;margin-bottom:1.1rem}
+.eyebrow::before{content:"";width:26px;height:2px;background:linear-gradient(90deg,var(--rouge),var(--navy))}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+section{padding:80px 0}
+.intro{color:var(--gris);max-width:46em;margin:14px 0 44px;font-size:1.04rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 30px;border-radius:999px;font-weight:600;font-size:.95rem;cursor:pointer;border:none;font-family:'Space Grotesk',sans-serif;transition:transform .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-rouge{background:linear-gradient(120deg,var(--rouge),var(--rouge-neon));color:#fff;box-shadow:0 8px 26px rgba(196,48,43,.35)}
+
+nav{position:sticky;top:0;z-index:60;background:rgba(251,250,246,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--bord)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:26px}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.3rem}
+.logo b{color:var(--navy)}.logo span{color:var(--rouge)}.logo i{font-style:normal;color:#5B6CFF;margin-right:2px}
+.nav-links{display:flex;gap:26px;font-size:.92rem;font-weight:500;color:var(--gris);margin-left:auto}
+.nav-links a:hover{color:var(--navy)}
+@media(max-width:820px){.nav-links{display:none}}
+
+.hero{padding:76px 0 60px;background:#fff;border-bottom:1px solid var(--bord)}
+.hero h1{font-size:clamp(2rem,4.4vw,3.2rem);max-width:17em}
+.hero .lead{color:var(--gris);max-width:40em;margin-top:18px;font-size:1.1rem}
+
+/* Triptyque */
+.phases{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;margin-top:10px}
+.phase{background:#fff;border:1px solid var(--bord);border-radius:var(--radius);padding:34px 30px;box-shadow:0 14px 40px rgba(30,34,96,.06);display:flex;flex-direction:column}
+.phase .num{width:44px;height:44px;border-radius:50%;background:linear-gradient(120deg,var(--rouge),var(--rouge-neon));color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.15rem;margin-bottom:18px}
+.phase h3{font-size:1.3rem;letter-spacing:.01em}
+.phase .sub{color:var(--rouge);font-weight:600;font-size:.92rem;margin:4px 0 18px}
+.phase ul{list-style:none;flex:1}
+.phase li{font-size:.93rem;color:var(--gris);padding:9px 0 9px 24px;position:relative;border-bottom:1px solid var(--fond-doux)}
+.phase li:last-child{border-bottom:none}
+.phase li::before{content:"→";position:absolute;left:0;color:var(--rouge);font-weight:700}
+.phase li strong{color:var(--navy)}
+.chiffre-cle{margin-top:18px;background:var(--fond-doux);border-radius:12px;padding:14px 18px;font-size:.88rem;color:var(--gris)}
+.chiffre-cle strong{color:var(--navy);font-family:'Space Grotesk',sans-serif}
+
+/* Partenaires */
+.partenaires{background:var(--fond-doux);border-top:1px solid var(--bord);border-bottom:1px solid var(--bord)}
+.part-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.part{background:#fff;border:1px solid var(--bord);border-radius:var(--radius);padding:32px;box-shadow:0 14px 40px rgba(30,34,96,.06);display:flex;gap:24px;align-items:flex-start}
+.part .plogo{flex:none;width:120px;height:90px;display:flex;align-items:center;justify-content:center}
+.part .plogo img{max-width:100%;max-height:100%;object-fit:contain}
+.part .plogo img.rond{width:84px;height:84px;border-radius:50%;object-fit:cover}
+.part h3{font-size:1.15rem;margin-bottom:4px}
+.part .role{color:var(--rouge);font-weight:600;font-size:.86rem;margin-bottom:10px}
+.part p{font-size:.93rem;color:var(--gris)}
+.part a.lien{display:inline-block;margin-top:10px;font-size:.88rem;font-weight:600;color:var(--navy)}
+.part a.lien:hover{color:var(--rouge)}
+.part-note{margin-top:24px;font-size:.92rem;color:var(--gris);max-width:56em}
+
+/* CTA final */
+.final{background:var(--navy-fonce);color:#EDEFE9;text-align:center}
+.final h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:14px}
+.final p{color:rgba(237,239,233,.75);max-width:38em;margin:0 auto 30px}
+
+footer{background:var(--navy-fonce);color:rgba(233,235,255,.65);padding:30px 0;font-size:.85rem;text-align:center;border-top:1px solid rgba(255,255,255,.08)}
+footer a{color:rgba(233,235,255,.85)}
+
+@media(max-width:940px){
+  .phases,.part-grid{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .part{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Navigation">
+  <div class="nav-inner">
+    <a class="logo" href="/"><i>◈</i><b>COMPTA</b><span>CHEF</span></a>
+    <div class="nav-links">
+      <a href="#triptyque">L'accompagnement</a>
+      <a href="#partenaires">Les partenaires</a>
+      <a href="/">← Retour au site</a>
+    </div>
+    <a class="btn btn-rouge" style="padding:11px 20px;font-size:.88rem" href="/#contact">Nous contacter</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Le Club ComptaChef</span>
+    <h1>Un restaurant, ça s'achète, ça s'exploite, <em>ça se revend.</em></h1>
+    <p class="lead">Le Club ComptaChef, c'est l'accompagnement complet du cycle de vie de votre établissement — et le réseau de partenaires experts de la restauration que nous avons réunis pour vous, chacun le meilleur dans sa spécialité.</p>
+  </div>
+</header>
+
+<!-- ============ TRIPTYQUE ============ -->
+<section id="triptyque">
+  <div class="wrap">
+    <span class="eyebrow">L'accompagnement</span>
+    <h2>Trois phases, <em>un seul interlocuteur.</em></h2>
+    <p class="intro">De la reprise à la revente, chaque phase a ses enjeux, ses chiffres et ses pièges. Nous sommes à vos côtés sur les trois.</p>
+
+    <div class="phases">
+      <div class="phase">
+        <div class="num">1</div>
+        <h3>J'ENTRE</h3>
+        <p class="sub">Valoriser, financer, sécuriser</p>
+        <ul>
+          <li><strong>Valoriser le fonds de commerce</strong> en croisant 2 méthodes : multiple du CA TTC (barème restauration ≈ 40 à 100 %) et multiple de l'EBE retraité (≈ 3 à 5×). On défend une fourchette, pas un chiffre au doigt mouillé.</li>
+          <li><strong>Obtenir le financement :</strong> prévisionnel solide, plan de financement, dossier bancaire et garanties (BPI). Un dossier bien monté fait baisser le taux et l'apport exigé.</li>
+          <li><strong>Décortiquer le bail commercial (3-6-9) :</strong> destination, indexation ILC, répartition des charges (décret Pinel), renouvellement.</li>
+          <li><strong>Auditer l'acte d'achat du fonds :</strong> répartition corporel/incorporel, séquestre, solidarité fiscale du repreneur, non-concurrence du cédant.</li>
+        </ul>
+        <div class="chiffre-cle"><strong>Use case :</strong> un fonds affiché 350 k€, requalifié ticket Z en main et négocié à 310 k€. L'accompagnement en amont coûte moins cher qu'une clause oubliée.</div>
+      </div>
+
+      <div class="phase">
+        <div class="num">2</div>
+        <h3>J'EXPLOITE</h3>
+        <p class="sub">Optimiser chaque poste du résultat</p>
+        <ul>
+          <li><strong>Chiffre d'affaires :</strong> couverts, ticket moyen, taux de remplissage par service, CA par place assise, CA/m² — et des serveurs formés à la suggestion.</li>
+          <li><strong>Marge brute :</strong> fiches recettes, matrice de la carte (étoiles, chevaux de labour, énigmes, poids morts), principes d'Omnès, point mort.</li>
+          <li><strong>Masse salariale :</strong> cible 30-35 % du CA, créneaux arbitrés par les chiffres, fidélisation intelligente (PPV, PEE, CESU…).</li>
+          <li><strong>Charges externes :</strong> 8-12 % du CA souvent sans contrôle — loyer &lt; 8-10 % du CA, audit annuel, stack logiciel rationalisé.</li>
+          <li><strong>TVA sécurisée :</strong> 3 taux dans une même addition (20 / 10 / 5,5 %) — le paramétrage de caisse qui évite marge perdue et redressement.</li>
+        </ul>
+        <div class="chiffre-cle"><strong>1 point</strong> de masse salariale ou de TVA mal calibré sur 1 M€ de CA ≈ <strong>10 000 €/an</strong>.</div>
+      </div>
+
+      <div class="phase">
+        <div class="num">3</div>
+        <h3>JE REVENDS</h3>
+        <p class="sub">Maximiser la valeur de sortie</p>
+        <ul>
+          <li><strong>Rémunération du dirigeant :</strong> l'arbitrage SARL (TNS, cotisations ≈ 40-45 %) vs SAS (assimilé salarié, dividendes à la flat tax 30 %) — un mix salaire + dividendes calibré sur votre résultat.</li>
+          <li><strong>Un EBE retraité lisible</strong> (rémunération neutralisée) fait grimper la valorisation le jour de la vente.</li>
+          <li><strong>Préparer la sortie bien avant de vendre :</strong> plus-value, abattements, apport-cession.</li>
+          <li><strong>Accompagner la transaction :</strong> le même travail qu'à l'achat, cette fois dans votre camp de vendeur.</li>
+        </ul>
+        <div class="chiffre-cle">La valeur de sortie se construit <strong>2 à 3 ans avant</strong> la mise en vente — pas le jour de l'estimation.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTENAIRES ============ -->
+<section class="partenaires" id="partenaires">
+  <div class="wrap">
+    <span class="eyebrow">Le réseau</span>
+    <h2>Les partenaires <em>du Club.</em></h2>
+    <p class="intro">Un restaurateur bien entouré pilote mieux. Nous avons réuni des spécialistes qui ne travaillent que pour la restauration — ou qui la connaissent intimement — et avec qui nos clients bénéficient d'un accès privilégié.</p>
+
+    <div class="part-grid">
+      <div class="part">
+        <div class="plogo"><img class="rond" src="/logo-afoodi.png" alt="Afoodi.io"></div>
+        <div>
+          <h3>Afoodi.io</h3>
+          <p class="role">Menu engineering & performance de la carte</p>
+          <p>La première plateforme à la frontière du contrôle de gestion et du marketing : coût matière par plat, classification de la carte, prix acceptés par vos clients, design du menu. Par des restaurateurs, pour des restaurateurs — jusqu'à +12-20 % de CA et +3 à 5 points de marge brute sur les cartes retravaillées.</p>
+          <a class="lien" href="https://www.afoodi.io" rel="noopener" target="_blank">www.afoodi.io →</a>
+        </div>
+      </div>
+
+      <div class="part">
+        <div class="plogo"><img src="/logo-social-society.png" alt="Social Society"></div>
+        <div>
+          <h3>Social Society</h3>
+          <p class="role">Communication & réseaux sociaux des restaurateurs</p>
+          <p>L'agence de communication dédiée aux restaurateurs : shooting photo et vidéo, création de contenus, montage et sponsorisation — ils s'occupent de tout, sans engagement. Parce qu'une salle pleine commence souvent sur Instagram, et que vous n'avez pas le temps de vous en occuper.</p>
+        </div>
+      </div>
+
+      <div class="part">
+        <div class="plogo"><img src="/logo-axa.png" alt="AXA"></div>
+        <div>
+          <h3>AXA — agent partenaire</h3>
+          <p class="role">Assurance des établissements CHR</p>
+          <p>Multirisque professionnelle, perte d'exploitation, responsabilité civile, protection du dirigeant : les contrats d'un restaurant méritent une revue annuelle — c'est l'un des postes où un audit fait presque toujours gagner. Notre agent partenaire connaît les spécificités du CHR et met vos contrats en concurrence.</p>
+        </div>
+      </div>
+
+      <div class="part">
+        <div class="plogo"><img src="/logo-fleury.png" alt="Fleury Architectures"></div>
+        <div>
+          <h3>Fleury Architectures</h3>
+          <p class="role">Conception & agencement de restaurants</p>
+          <p>Création, rénovation ou remodeling d'établissement : l'agencement conditionne le nombre de couverts, le flux de service et donc le CA par m². Un projet pensé avec l'architecte <em style="background:none;color:var(--gris)">et</em> le compte d'exploitation évite les travaux magnifiques… qui ne se rentabilisent jamais.</p>
+        </div>
+      </div>
+    </div>
+    <p class="part-note">Les membres du Club bénéficient d'introductions directes et de conditions négociées auprès de ces partenaires. Déontologie oblige : nous ne percevons aucune rétrocommission — notre seule rémunération est celle de notre lettre de mission, et nos recommandations ne servent que vos intérêts.</p>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="final">
+  <div class="wrap">
+    <h2>Rejoindre le Club commence par un diagnostic.</h2>
+    <p>Le Diagnostic de rentabilité chiffre les euros qui dorment dans votre exploitation — et vous ouvre l'accès à l'accompagnement et aux partenaires du Club.</p>
+    <a class="btn btn-rouge" href="/#contact">Réserver mon diagnostic</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 ODOS CONSEIL — ComptaChef · <a href="/">Accueil</a> · <a href="/mentions-legales.html">Mentions légales</a> · <a href="/confidentialite.html">Confidentialité</a>
+  </div>
+</footer>
+
+</body>
+</html>
