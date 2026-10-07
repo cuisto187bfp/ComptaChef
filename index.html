@@ -49,7 +49,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Nunito:wght@550;800;1000&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   /* palette ComptaChef */
@@ -110,9 +110,9 @@ section.douce{background:var(--fond-doux)}
 /* ================= NAV ================= */
 nav{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(22,27,74,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(122,134,255,.18);transition:background .25s,box-shadow .3s,padding .3s}
 .nav-inner{max-width:1280px;margin:0 auto;padding:22px 24px;display:flex;align-items:center;gap:26px;transition:padding .3s}
-.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.3rem;flex:none}
-.logo b{color:#fff;transition:color .25s}
-.logo span{color:var(--rouge-neon);transition:color .25s}
+.logo{font-family:'Nunito',sans-serif;font-weight:1000;font-size:1.34rem;letter-spacing:.01em;flex:none}
+.logo b{color:var(--rouge-neon);transition:color .25s}
+.logo span{color:#fff;transition:color .25s}
 .logo i{font-style:normal;color:var(--bleu-neon);margin-right:2px}
 .logo small{display:block;font-size:.6rem;letter-spacing:.3em;color:#9AA1D6;font-weight:500;margin-top:-2px;text-transform:uppercase;transition:color .25s}
 .nav-links{display:flex;gap:26px;font-size:.92rem;font-weight:500;color:#C9CEF5;margin-left:8px}
@@ -131,8 +131,8 @@ nav.retreci .nav-inner{padding:10px 24px}
 /* Header dynamique : clair au-dessus des sections sombres */
 @media (prefers-color-scheme: light){
   nav.inverse{background:rgba(251,250,246,.95);border-bottom-color:var(--bord-clair)}
-  nav.inverse .logo b{color:var(--navy)}
-  nav.inverse .logo span{color:var(--rouge)}
+  nav.inverse .logo b{color:var(--rouge)}
+  nav.inverse .logo span{color:var(--navy)}
   nav.inverse .logo small{color:var(--gris)}
   nav.inverse .nav-links{color:var(--gris)}
   nav.inverse .nav-links a:hover{color:var(--navy)}
@@ -453,9 +453,9 @@ footer h4{font-family:'Space Grotesk',sans-serif;color:#fff;font-size:.95rem;mar
 footer a:hover{color:#fff}
 footer ul{list-style:none}
 footer li{padding:4px 0}
-.foot-logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.25rem}
-.foot-logo b{color:#fff}
-.foot-logo span{color:var(--rouge-neon)}
+.foot-logo{font-family:'Nunito',sans-serif;font-weight:1000;font-size:1.3rem}
+.foot-logo b{color:var(--rouge-neon)}
+.foot-logo span{color:#fff}
 .foot-logo i{font-style:normal;color:var(--bleu-neon);margin-right:2px}
 .foot-contact{margin-top:8px}
 .foot-legal{margin-top:36px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.82rem}
