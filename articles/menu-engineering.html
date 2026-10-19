@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<title>Menu engineering : votre carte vend-elle les bons plats ? | ComptaChef</title>
+<meta name="description" content="Croiser la popularité et la marge de chaque plat, puis réorganiser la carte — sans toucher à la cuisine ni aux prix. Un cas mesuré près de Bordeaux : +1,85 point de marge brute sur 113 services.">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="canonical" href="https://www.comptachef.com/articles/menu-engineering.html">
+<meta property="og:title" content="Menu engineering : votre carte vend-elle les bons plats ?">
+<meta property="og:description" content="Réorganiser la carte sans toucher à la cuisine ni aux prix : +1,85 point de marge brute mesuré sur 113 services.">
+<meta property="og:url" content="https://www.comptachef.com/articles/menu-engineering.html">
+<meta property="og:image" content="https://www.comptachef.com/og-image.png">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Nunito:wght@550;800;1000&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#2D3282;--navy-fonce:#1E2260;--rouge:#C4302B;--rouge-neon:#FF4B44;--papier:#FBFAF6;--fond-doux:#F6F7FC;--gris:#5F66A0;--bord:rgba(45,50,130,.18);--radius:18px;color-scheme:light}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Outfit',sans-serif;background:var(--papier);color:var(--navy);line-height:1.7;font-size:17.5px}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;font-weight:700;line-height:1.15;letter-spacing:-.02em}
+em{font-family:'Fraunces',serif;font-style:italic;font-weight:500;background:linear-gradient(100deg,var(--rouge),var(--rouge-neon));-webkit-background-clip:text;background-clip:text;color:transparent}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border-radius:999px;font-weight:600;font-size:.95rem;border:none;font-family:'Space Grotesk',sans-serif;transition:transform .18s,box-shadow .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-rouge{background:linear-gradient(120deg,var(--rouge),var(--rouge-neon));color:#fff;box-shadow:0 8px 26px rgba(196,48,43,.35)}
+
+nav{position:sticky;top:0;z-index:60;background:rgba(251,250,246,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--bord)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:26px}
+.logo{font-family:'Nunito',sans-serif;font-weight:1000;font-size:1.3rem;letter-spacing:.01em}
+.logo b{color:var(--rouge)}.logo span{color:var(--navy)}
+.nav-links{display:flex;gap:26px;font-size:.92rem;font-weight:500;color:var(--gris);margin-left:auto}
+.nav-links a:hover{color:var(--navy)}
+@media(max-width:820px){.nav-links{display:none}}
+
+article{padding:64px 0 40px}
+.retour{font-size:.9rem;color:var(--gris);font-weight:600}
+.retour:hover{color:var(--rouge)}
+.meta{display:flex;align-items:center;gap:12px;margin:26px 0 18px}
+.badge{font-family:'Space Grotesk',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:999px;background:#FDECEB;color:var(--rouge)}
+.meta time{font-size:.88rem;color:var(--gris)}
+h1{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:10px}
+.chapo{font-size:1.15rem;color:var(--gris);margin:18px 0 8px}
+h2{font-size:1.35rem;margin:42px 0 14px}
+p{margin-bottom:16px;color:#39406e}
+ul{margin:0 0 16px 24px;color:#39406e}
+li{margin-bottom:8px}
+.encart{background:#fff;border:1px solid var(--bord);border-left:4px solid var(--rouge);border-radius:12px;padding:22px 26px;margin:28px 0}
+.encart strong{font-family:'Space Grotesk',sans-serif;color:var(--navy)}
+.matrice{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0}
+.quadrant{background:#fff;border:1px solid var(--bord);border-radius:12px;padding:18px 20px}
+.quadrant .q-titre{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.98rem;margin-bottom:6px}
+.quadrant .q-sous{font-size:.8rem;color:var(--gris);text-transform:uppercase;letter-spacing:.06em;font-weight:600;margin-bottom:8px}
+.quadrant p{font-size:.9rem;margin:0}
+.quadrant.star{border-top:3px solid var(--rouge)}
+.quadrant.vache{border-top:3px solid var(--navy)}
+.quadrant.enigme{border-top:3px solid #FFC46E}
+.quadrant.poids{border-top:3px solid var(--gris)}
+@media(max-width:600px){.matrice{grid-template-columns:1fr}}
+.auteur{display:flex;gap:16px;align-items:center;margin:48px 0 0;padding-top:28px;border-top:1px solid var(--bord)}
+.auteur img{width:60px;height:60px;border-radius:50%;object-fit:cover}
+.auteur .nom{font-family:'Space Grotesk',sans-serif;font-weight:700}
+.auteur .role{font-size:.88rem;color:var(--gris)}
+
+.cta{background:var(--navy-fonce);color:#EDEFE9;text-align:center;padding:56px 0;margin-top:56px}
+.cta h2{margin:0 0 12px;font-size:1.5rem}
+.cta p{color:rgba(237,239,233,.75);max-width:36em;margin:0 auto 26px}
+
+footer{background:var(--navy-fonce);color:rgba(233,235,255,.65);padding:28px 0;font-size:.85rem;text-align:center;border-top:1px solid rgba(255,255,255,.08)}
+footer a{color:rgba(233,235,255,.85)}
+</style>
+</head>
+<body>
+
+<nav aria-label="Navigation">
+  <div class="nav-inner">
+    <a class="logo" href="/"><b>COMPTA</b><span>CHEF</span></a>
+    <div class="nav-links">
+      <a href="/#parcours">Le parcours</a>
+      <a href="/#formules">Formules</a>
+      <a href="/ecosysteme.html">L'écosystème</a>
+      <a href="/articles.html">← Tous les articles</a>
+    </div>
+    <a class="btn btn-rouge" style="padding:11px 20px;font-size:.88rem" href="/#formulaire">Réserver mon diagnostic</a>
+  </div>
+</nav>
+
+<article>
+  <div class="wrap">
+    <a class="retour" href="/articles.html">← Articles & publications</a>
+    <div class="meta">
+      <span class="badge">Marge & pricing</span>
+      <time datetime="2026-10-22">Octobre 2026</time>
+    </div>
+    <h1>Votre carte est un vendeur. <em>Vend-elle les bons plats ?</em></h1>
+    <p class="chapo">Votre plat le plus rentable est probablement caché en bas de la page 2. Et votre moins margé trône en tête de carte, là où 60 % des regards se posent en premier.</p>
+
+    <h2>Le biais que personne ne pilote</h2>
+    <p>La lecture d'une carte n'a rien d'aléatoire : les premiers plats d'une rubrique captent la majorité de l'attention, les encadrés et mises en avant aussi. Si ces emplacements premium sont occupés par vos plats les moins margés, votre carte travaille contre vous — 12 heures par jour, à chaque service.</p>
+    <p>C'est tout l'objet du <strong>menu engineering</strong> : croiser, plat par plat, deux données que vous avez déjà — la <strong>popularité</strong> (les quantités vendues, dans votre caisse) et la <strong>marge brute unitaire</strong> (prix de vente moins coût matière, dans vos fiches techniques).</p>
+
+    <h2>La matrice : 4 familles de plats</h2>
+    <div class="matrice">
+      <div class="quadrant star">
+        <div class="q-titre">Les stars</div>
+        <div class="q-sous">Populaires · margés</div>
+        <p>Vos champions. Ils méritent les meilleurs emplacements, les photos, les recommandations du serveur. Ne touchez à rien d'autre.</p>
+      </div>
+      <div class="quadrant vache">
+        <div class="q-titre">Les vaches à lait</div>
+        <div class="q-sous">Populaires · peu margés</div>
+        <p>Ils remplissent la salle mais rapportent peu. À reformuler discrètement : portion, garniture, accompagnement — ou léger repricing.</p>
+      </div>
+      <div class="quadrant enigme">
+        <div class="q-titre">Les énigmes</div>
+        <div class="q-sous">Peu vendus · très margés</div>
+        <p>Le gisement. Ces plats rapportent mais personne ne les voit : remontez-les en tête de rubrique, soignez la description, faites-les recommander.</p>
+      </div>
+      <div class="quadrant poids">
+        <div class="q-titre">Les poids morts</div>
+        <div class="q-sous">Peu vendus · peu margés</div>
+        <p>Ils encombrent la carte, la production et le stock. Sortie, ou refonte complète. Une carte courte vend mieux qu'une carte longue.</p>
+      </div>
+    </div>
+
+    <h2>Réorganiser — sans toucher à la cuisine, sans changer les prix</h2>
+    <p>Une fois la matrice posée, les leviers sont purement éditoriaux :</p>
+    <ul>
+      <li><strong>L'ordre</strong> : les énigmes et les stars en tête de rubrique, les vaches à lait au milieu</li>
+      <li><strong>Les mises en avant</strong> : encadrés, « suggestion du chef », photos — réservés aux plats margés</li>
+      <li><strong>Les descriptions</strong> : deux lignes qui racontent le produit vendent plus qu'un nom sec</li>
+      <li><strong>L'ancrage des prix</strong> : un plat premium bien placé rend le reste de la carte « raisonnable »</li>
+    </ul>
+
+    <div class="encart">
+      <strong>Un cas mesuré près de Bordeaux</strong> par notre partenaire Afoodi : réorganisation de la carte seule — aucun changement de recette, aucun changement de prix — et <strong>+1,85 point de marge brute</strong>, validé statistiquement sur 113 services. Sur un établissement à 1 M€ de CA, c'est 18 500 € par an.
+    </div>
+
+    <h2>Par où commencer</h2>
+    <ul>
+      <li>Exportez les quantités vendues par plat depuis votre caisse (L'Addition, Lightspeed… 2 minutes)</li>
+      <li>Reprenez la marge brute unitaire de chaque plat depuis vos fiches techniques — si elles datent, recalculez d'abord vos 10 meilleures ventes</li>
+      <li>Classez chaque plat dans l'un des 4 quadrants</li>
+      <li>Réorganisez la carte à la prochaine impression : ordre, mises en avant, descriptions</li>
+      <li>Mesurez : le mix des ventes doit se déformer vers les plats margés dès les premières semaines</li>
+    </ul>
+    <p>Votre carte est un vendeur qui travaille 12 heures par jour. La question : est-ce qu'elle vend les bons plats ?</p>
+
+    <div class="auteur">
+      <img src="/photo-emmanuel.jpg" alt="Emmanuel Morera">
+      <div>
+        <div class="nom">Emmanuel Morera</div>
+        <div class="role">Expert-comptable · Fondateur de ComptaChef — 100 % restauration, Bordeaux & toute la France</div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Et dans votre carte, combien dort en bas de la page 2 ?</h2>
+    <p>Le Diagnostic de rentabilité croise votre caisse et vos fiches techniques pour chiffrer, plat par plat, ce que votre carte peut rendre. 980 € HT, offert si vous poursuivez avec nous.</p>
+    <a class="btn btn-rouge" href="/#formulaire">Réserver mon diagnostic</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 ODOS CONSEIL — ComptaChef · <a href="/">Accueil</a> · <a href="/articles.html">Articles</a> · <a href="/mentions-legales.html">Mentions légales</a> · <a href="/confidentialite.html">Confidentialité</a>
+  </div>
+</footer>
+
+</body>
+</html>
