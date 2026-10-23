@@ -333,6 +333,7 @@ nav.retreci .nav-inner{padding:10px 24px}
 .palier.star{border:2px solid var(--rouge);position:relative;box-shadow:0 22px 60px rgba(196,48,43,.14)}
 .palier.star::before{content:"Le plus choisi";position:absolute;top:-14px;left:26px;background:linear-gradient(120deg,var(--rouge),var(--rouge-neon));color:#fff;font-size:.75rem;font-weight:600;padding:4px 14px;border-radius:999px;font-family:'Space Grotesk',sans-serif}
 .palier h3{font-size:1.25rem}
+.palier .role{font-family:'Space Grotesk',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--rouge);margin:8px 0 2px}
 .palier .pour{font-size:.89rem;color:var(--gris);margin:6px 0 18px;min-height:2.7em}
 .palier .prix{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums}
 .palier .prix small{font-size:.85rem;font-weight:500;color:var(--gris)}
@@ -840,24 +841,29 @@ footer li{padding:4px 0}
     <div class="paliers">
       <div class="palier">
         <h3>Conformité</h3>
-        <p class="pour">Pour l'établissement qui veut être en règle, sans y penser.</p>
+        <div class="role">On vous montre où est la marge</div>
+        <p class="pour">Pour l'établissement qui veut être en règle — et savoir, chaque trimestre, où il gagne et où il perd.</p>
         <ul>
           <li>Tenue et révision comptable</li>
           <li>Déclarations fiscales et TVA</li>
           <li>Bulletins de paie et social CHR</li>
           <li>Bilan annuel et liasse fiscale</li>
+          <li class="plus">Rendez-vous trimestriel : étude de rentabilité 100 % restauration — plats les plus vendus, plats rentables et non rentables, créneaux qui perdent de l'argent</li>
+          <li class="plus">Rapport trimestriel : vos 3 actions prioritaires, chiffrées</li>
         </ul>
         <a class="btn btn-ligne" href="#formulaire">Être rappelé</a>
       </div>
 
       <div class="palier star">
         <h3>Pilotage</h3>
-        <p class="pour">Pour l'exploitant qui veut décider avec ses chiffres, pas les subir.</p>
+        <div class="role">On va la chercher avec vous</div>
+        <p class="pour">Pour l'exploitant qui veut que les actions soient mises en œuvre — pas seulement listées dans un rapport.</p>
         <ul>
-          <li>Tout Conformité, inclus</li>
+          <li>Tout Conformité, inclus — dont l'étude trimestrielle</li>
           <li class="plus">Tableau de bord mensuel — 1 page, 5 chiffres</li>
           <li class="plus">Rendez-vous mensuel 45 min → 3 décisions datées</li>
-          <li class="plus">Suivi panier moyen, coût matière, coulage, fiches techniques</li>
+          <li class="plus">Mise en œuvre des actions correctrices : coût réel de chaque plat, repricing, plats non rentables rendus rentables</li>
+          <li class="plus">Ingénierie de menu : plats rentables mis en avant, ordre et redesign de la carte</li>
           <li class="plus">Alerte immédiate en cas de dérive, pas 2 mois après</li>
         </ul>
         <a class="btn btn-rouge" href="#formulaire">Commencer par le diagnostic</a>
@@ -865,6 +871,7 @@ footer li{padding:4px 0}
 
       <div class="palier">
         <h3>Direction financière</h3>
+        <div class="role">On pilote le groupe</div>
         <p class="pour">Pour les groupes et franchisés de 2 établissements et plus.</p>
         <ul>
           <li>Tout Pilotage, inclus</li>
