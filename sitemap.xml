@@ -2,9 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.comptachef.com/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.comptachef.com/expert-comptable-bar-brasserie.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.comptachef.com/expert-comptable-franchise-restauration.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.comptachef.com/direction-financiere-groupe-restauration.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.comptachef.com/reprise-creation-restaurant.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.comptachef.com/ecosysteme.html</loc>
@@ -20,43 +44,43 @@
   </url>
   <url>
     <loc>https://www.comptachef.com/articles/fiches-techniques.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.comptachef.com/articles/coulage-bar.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.comptachef.com/articles/planning-ca-horaire.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.comptachef.com/articles/menu-engineering.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.comptachef.com/articles/prix-geles.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.comptachef.com/articles/contrats-tacites.html</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.comptachef.com/articles/le-loyer.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
