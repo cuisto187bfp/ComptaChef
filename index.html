@@ -187,7 +187,7 @@ nav.retreci .nav-inner{padding:10px 24px}
 @media (max-width:940px){.photo-equipe{height:185px}}
 
 /* le tableau de bord produit (carte verre) */
-.board{background:linear-gradient(160deg,rgba(91,108,255,.12),rgba(255,75,68,.06)),var(--nuit-2);border:1px solid var(--verre-bord);border-radius:var(--radius);padding:26px 26px 20px;box-shadow:0 30px 70px -30px rgba(0,0,0,.7);backdrop-filter:blur(8px)}
+.board{color:var(--texte-nuit);background:linear-gradient(160deg,rgba(91,108,255,.12),rgba(255,75,68,.06)),var(--nuit-2);border:1px solid var(--verre-bord);border-radius:var(--radius);padding:26px 26px 20px;box-shadow:0 30px 70px -30px rgba(0,0,0,.7);backdrop-filter:blur(8px)}
 .board-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(122,134,255,.2);padding-bottom:12px;margin-bottom:6px}
 .board-head .t{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.92rem}
 .board-head .d{font-size:.76rem;color:var(--gris-nuit)}
@@ -475,6 +475,47 @@ footer li{padding:4px 0}
   .diag-hero{padding:34px 28px}
   .sticky-cta{display:block;position:fixed;bottom:0;left:0;right:0;z-index:70;background:linear-gradient(120deg,var(--rouge),var(--rouge-neon));text-align:center;padding:15px;font-family:'Space Grotesk',sans-serif;font-weight:700;color:#fff;text-decoration:none;box-shadow:0 -8px 24px rgba(0,0,0,.25)}
   body{padding-bottom:54px}
+}
+
+/* ================= MOBILE (téléphone) ================= */
+@media (max-width:640px){
+  html,body{overflow-x:hidden}
+  .wrap{padding:0 18px}
+  /* nav : logo + icônes ; le bouton vit dans la barre basse */
+  .nav-inner{padding:14px 16px;gap:10px}
+  nav.retreci .nav-inner{padding:9px 16px}
+  .nav-right{gap:4px}
+  .nav-right .btn{display:none}
+  .logo{font-size:1.12rem}
+  .sociaux a{width:34px;height:34px}
+  /* hero : plus de cartes flottantes derrière le texte */
+  .fond-dash{display:none}
+  .hero-sombre{padding:100px 0 50px}
+  .hero-grid{gap:30px}
+  h1{font-size:2.05rem;line-height:1.12}
+  .hero-sombre .accroche{font-size:1.04rem;margin-top:20px}
+  .pill{font-size:.84rem;padding:10px 14px;gap:8px}
+  .hero-actions{margin-top:24px}
+  .hero-actions .btn,.hero-actions > a{width:100%}
+  .hero-meta{gap:12px 18px;margin-top:24px}
+  .photo-equipe{height:200px}
+  /* tableau de bord : valeurs sur une ligne, légende qui respire */
+  .board{padding:18px 14px 14px}
+  .board-head{flex-direction:column;align-items:flex-start;gap:3px}
+  .board td{font-size:.82rem;padding:9px 0}
+  .board td.k{padding-right:8px}
+  .board td.v{white-space:nowrap;font-size:.94rem}
+  .board td.s{width:88px;font-size:.7rem;padding-left:8px;line-height:1.25}
+  .board-foot{font-size:.8rem}
+  /* sections & grilles */
+  section{padding:48px 0}
+  h2{font-size:1.65rem}
+  .foot-grid{grid-template-columns:1fr;gap:22px}
+  .aimant,.diag-hero{padding:26px 20px}
+  .galerie img{height:200px}
+  .graph{padding:18px 16px 14px}
+  img,svg,video{max-width:100%}
+  table{display:table;width:100%}
 }
 </style>
 </head>
