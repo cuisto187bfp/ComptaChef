@@ -102,3 +102,50 @@
     init();
   }
 })();
+
+/* ============================================================
+   ComptaChef — Détection des conversions (envoyées via GTM)
+   Pousse des événements dataLayer que Google Tag Manager
+   transforme en conversions Google Ads :
+   - conversion_formulaire : envoi du formulaire de contact (Formspree)
+   - conversion_tel        : clic sur un lien téléphone (tel:)
+   - conversion_whatsapp   : clic sur un lien WhatsApp (wa.me)
+   ============================================================ */
+(function () {
+  'use strict';
+  window.dataLayer = window.dataLayer || [];
+
+  function push(eventName, done) {
+    var called = false;
+    function once() { if (!called) { called = true; if (done) done(); } }
+    window.dataLayer.push({ event: eventName, eventCallback: once, eventTimeout: 600 });
+    // Filet de sécurité si GTM est bloqué (adblock) : ne jamais bloquer l'action.
+    setTimeout(once, 700);
+  }
+
+  // Clics téléphone / WhatsApp (la navigation n'est pas interrompue).
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('tel:') === 0) {
+      window.dataLayer.push({ event: 'conversion_tel' });
+    } else if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1) {
+      window.dataLayer.push({ event: 'conversion_whatsapp' });
+    }
+  }, true);
+
+  // Envoi du formulaire de contact (Formspree) : on laisse 0,6 s au tag
+  // pour partir avant que la page ne quitte le site.
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (!f || !f.action || f.action.indexOf('formspree.io') === -1) return;
+    if (f.dataset.ccTracked === '1') return; // second passage : laisser partir
+    e.preventDefault();
+    f.dataset.ccTracked = '1';
+    push('conversion_formulaire', function () {
+      if (typeof f.requestSubmit === 'function') { f.requestSubmit(); }
+      else { f.submit(); }
+    });
+  }, true);
+})();
